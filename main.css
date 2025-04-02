@@ -70,6 +70,7 @@ p{
 body {
     background-color: #fff;
     color: #000;
+    margin: 0%;
 }
 
 /*HEADER*/
@@ -78,6 +79,19 @@ body {
 /*SECTION 2 - QUIZ */
 /*SECTION 3 - INFO */
 /*SECTION 4 - SLIDESHOW */
+.slide-box {
+    background-color: #CCBDDD;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.slide-box__text {
+    display: flex;
+    flex-direction: column;
+}
+.slide-box__image {
+    display: flex;
+}
 /*SECTION 5 - Q&A*/
 /*SECTION 6 - INFO */
 /*SECTION 7 - KONTAKTFORMULAR */
@@ -106,6 +120,7 @@ body {
         line-height: 24px;
     }
 
+    /*BUTTONS*/
     .cta-button {
         display: inline-block;
         width: 170px;
@@ -114,8 +129,6 @@ body {
         font-size: 16px;
         line-height: 50px;
     }
-    
-
     /*HEADER*/
     /*HERO*/
     /*SECTION 1 - VIDEO MED JAKOB */
