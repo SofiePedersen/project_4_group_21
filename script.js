@@ -33,15 +33,15 @@ showSlidesAuto ();
 function showSlidesAuto() {
     let i;
     let slides = document.getElementsByClassName ("slide-box");
-    for (i = 0; i < slideIndex.length; i++) {
+    
+    for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
     autoSlideIndex++;
-    if (autoSlideIndex > slides.length) {autoSlideIndex = 1}
+    if (autoSlideIndex > slides.length) {autoSlideIndex = 1;}
     
-    slides[autoSlideIndex-1].style.display = "block";
-    setTimeout (showSlidesAuto, 2000);
-
+    slides[autoSlideIndex - 1].style.display = "block";
+    setTimeout (showSlidesAuto, 10000);
 }
 //SECTION 7 - KONTAKTFORMULAR//
