@@ -51,7 +51,6 @@ p{
 body {
     background-color: #ffffff;
     color: #000;
-
 }
 
 /*HEADER*/
@@ -88,7 +87,30 @@ body {
         line-height: 24px;
     }
     
+    /*HEADER*/
+    /*HERO*/
+    /*SECTION 1 - VIDEO MED JAKOB */
+    /*SECTION 2 - QUIZ */
+    /*SECTION 3 - INFO */
+    /*SECTION 4 - SLIDESHOW */
+    /*SECTION 5 - Q&A*/
+    /*SECTION 6 - INFO */
+    /*SECTION 7 - KONTAKTFORMULAR */
+    /*SECTION 8 - SOME INFLUENCERS */
+    /*FOOTER*/
 }
 
-@media only screen and (min-width: 1240px) {}
+@media only screen and (min-width: 1240px) {
+    /*HEADER*/
+    /*HERO*/
+    /*SECTION 1 - VIDEO MED JAKOB */
+    /*SECTION 2 - QUIZ */
+    /*SECTION 3 - INFO */
+    /*SECTION 4 - SLIDESHOW */
+    /*SECTION 5 - Q&A*/
+    /*SECTION 6 - INFO */
+    /*SECTION 7 - KONTAKTFORMULAR */
+    /*SECTION 8 - SOME INFLUENCERS */
+    /*FOOTER*/
+}
   
