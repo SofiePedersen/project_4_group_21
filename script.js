@@ -83,6 +83,6 @@ function showSlidesAuto() {
     }
 
     dots[autoSlideIndex - 1].className += " active";
-    setTimeout (showSlidesAuto, 10000);
+    setTimeout (showSlidesAuto, 40000);
 }
 //SECTION 7 - KONTAKTFORMULAR//
