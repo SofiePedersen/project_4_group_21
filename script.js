@@ -1,11 +1,13 @@
 //HEADER//
 //SECTION 2 - QUIZ//
-//SECTION 4 - SLIDESHOW//
+//SECTION 4 - SLIDESHOW
+//Manuelt slideshow 
 let manualSlideIndex = 1;
 showSlidesManual (manualSlideIndex);
 
 function currentSlide (n) {
-    showSlidesManual (manualSlideIndex +=n);
+    manualSlideIndex = n;
+    showSlidesManual (manualSlideIndex);
 }
 
 function showSlidesManual (n) {
@@ -19,20 +21,21 @@ function showSlidesManual (n) {
     }
 
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active","");
+        dots[i].className = dots[i].className.replace(" active","");
     }
 
     slides[manualSlideIndex-1].style.display = "block";
-    dots[manualSlideIndex-1].className += "active";
+    dots[manualSlideIndex-1].className += " active";
 }
 
-//Automatisk slideshow//
+//Automatisk slideshow
 let autoSlideIndex = 0;
 showSlidesAuto ();
 
 function showSlidesAuto() {
     let i;
     let slides = document.getElementsByClassName ("slide-box");
+    let dots = document.getElementsByClassName ("dot");
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -42,6 +45,12 @@ function showSlidesAuto() {
     if (autoSlideIndex > slides.length) {autoSlideIndex = 1;}
     
     slides[autoSlideIndex - 1].style.display = "block";
+
+    for (i = 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace (" active", "");
+    }
+
+    dots[autoSlideIndex - 1].className += " active";
     setTimeout (showSlidesAuto, 10000);
 }
 //SECTION 7 - KONTAKTFORMULAR//

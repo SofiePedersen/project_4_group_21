@@ -79,6 +79,9 @@ body {
 /*SECTION 2 - QUIZ */
 /*SECTION 3 - INFO */
 /*SECTION 4 - SLIDESHOW */
+.section-4 {
+    background-color: #CCBDDD;
+}
 .slide-box {
     background-color: #CCBDDD;
     width: 100%;
@@ -104,11 +107,21 @@ body {
     height: auto;
 }
 
+.dot-container {
+    text-align: center;
+    margin-top: 20px;
+}
 .dot {
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 5px;
+    background-color: #9B8BBB;
+    border-radius: 50%;
     display: inline-block;
+}
+
+.dot.active {
+    background-color: #81b428;
 }
 /*SECTION 5 - Q&A*/
 /*SECTION 6 - INFO */
