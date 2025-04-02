@@ -47,9 +47,28 @@ p{
     font-size: 16px;
     line-height: 20px;
 }
+/*BUTTONS*/
+.cta-button {
+    display: inline-block;
+    width: 105px;
+    height: 30px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    background-color: #81b428;
+    font-family: "Agrandir-regular";
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #648D1C;
+}
 
 body {
-    background-color: #ffffff;
+    background-color: #fff;
     color: #000;
 }
 
@@ -86,7 +105,17 @@ body {
         font-size: 18px;
         line-height: 24px;
     }
+
+    .cta-button {
+        display: inline-block;
+        width: 170px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 16px;
+        line-height: 50px;
+    }
     
+
     /*HEADER*/
     /*HERO*/
     /*SECTION 1 - VIDEO MED JAKOB */
