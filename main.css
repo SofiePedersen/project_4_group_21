@@ -78,6 +78,15 @@ body {
 /*HERO*/
 /*SECTION 1 - VIDEO MED JAKOB */
 /*SECTION 2 - QUIZ */
+.quiz-wrapper {
+    background-color: red;
+    padding: 2.5rem;
+}
+
+.quiz-title {
+    font-family: 'Agrandir-WideBlackItalic';
+    color: #81b428;
+}
 /*SECTION 3 - INFO */
 /*SECTION 4 - SLIDESHOW */
 .section-4 {
