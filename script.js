@@ -40,6 +40,8 @@ function currentSlide (n) {
     manualSlideIndex = n;
     showSlidesManual (manualSlideIndex);
     highlightThumbnail (n);
+
+    stopAutoSlides ();
 }
 
 function showSlidesManual (n) {
