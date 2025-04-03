@@ -272,6 +272,40 @@ header {
     margin-top: -20rem;
 }
 
+.quiz-card {
+    background-color: coral;
+}
+
+.quiz-card-wrapper {
+    padding: 1.4rem;
+}
+
+.quiz-card-bottom-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz-card-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    gap: 1.5rem;
+}
+
+.quiz-bottom-dot-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.quiz-bottom-dot {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    background-color: lightgray;
+}
+
 /*SECTION 3 - INFO */
 /*SECTION 4 - SLIDESHOW */
 .section-4 {
