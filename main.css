@@ -161,7 +161,7 @@ header {
 }
 
 .burger-menu-content {
-    position: relative;
+    display: flex;
 }
 
 .open-burger-menu {
@@ -169,7 +169,6 @@ header {
     max-width: 100vw;
     max-height: 100vh;
     border-right: 1px solid #d0d1d3;
-    position: right;
     top: 0px;
     left: 0;
     display: none;
