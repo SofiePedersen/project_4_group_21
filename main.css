@@ -91,7 +91,7 @@ body {
 /*SECTION 4 - SLIDESHOW */
 .section-4 {
     background-color: #CCBDDD;
-    height: 750px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -157,6 +157,14 @@ body {
 
 .dot.active {
     background-color: #81b428;
+}
+
+.slide-box__row {
+    display: none;
+}
+
+.slide-box__column {
+    display: none;
 }
 
 /*SECTION 5 - Q&A*/
@@ -257,25 +265,41 @@ body {
     }
     
     .dot-container {
-        text-align: left;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        margin-left: 50px;
-        position: relative;
+       display: none;
+    }
+
+    .slide-box__column{
+        display: flex;
+        flex-direction: column;
+        width: 12.5%;
+        box-sizing: border-box;
+    }
+
+    .slide-box__row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .demo {
+        opacity: 0.6;
+        cursor: pointer;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slide-box__column.active {
+        opacity: 1;
     }
     
-    .dot {
-        height: 12px;
-        width: 12px;
-        margin: 4px;
-        background-color: #9B8BBB;
-        border-radius: 50%;
-        display: inline-block;
+    .demo:hover {
+        opacity: 1;
     }
     
-    .dot.active {
-        background-color: #81b428;
-    }
+   
     /*SECTION 5 - Q&A*/
     /*SECTION 6 - INFO */
     /*SECTION 7 - KONTAKTFORMULAR */
