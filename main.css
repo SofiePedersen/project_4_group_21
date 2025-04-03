@@ -506,6 +506,12 @@ header {
         flex-direction: column;
         width: 12.5%;
         box-sizing: border-box;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    .slide-box__column.active {
+        opacity: 1;
     }
 
     .slide-box__row {
@@ -515,21 +521,9 @@ header {
         justify-content: center;
         flex-wrap: wrap;
     }
-
-    .demo {
-        opacity: 0.6;
-        cursor: pointer;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .slide-box__column.active {
-        opacity: 1;
-    }
     
     .demo:hover {
-        opacity: 1;
+        opacity: 1 !important;
     }
     
    
