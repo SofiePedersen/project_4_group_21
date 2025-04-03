@@ -41,23 +41,20 @@ function currentSlide (n) {
 }
 
 function showSlidesManual (n) {
-    let i;
     let slides = document.getElementsByClassName ("slide-box");
     let dots =document.getElementsByClassName ("dot");
-   
-    if (n > slides.length) {manualSlideIndex = 1;}
-    if (n < 1) {manualSlideIndex = slides.length;}
     
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove ("active");
     }
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active","");
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove ("active");
     }
 
-    slides[manualSlideIndex - 1].style.display = "block";
-    dots[manualSlideIndex - 1].className += " active";
+    slides[n - 1].classList.add("active");
+
+    dots[n - 1].classList.add("active");
 }
 
 //Automatisk slideshow
@@ -65,24 +62,24 @@ let autoSlideIndex = 0;
 showSlidesAuto ();
 
 function showSlidesAuto() {
-    let i;
     let slides = document.getElementsByClassName ("slide-box");
     let dots = document.getElementsByClassName ("dot");
     
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove ("active");
     }
 
     autoSlideIndex++;
     if (autoSlideIndex > slides.length) {autoSlideIndex = 1;}
     
-    slides[autoSlideIndex - 1].style.display = "block";
+    slides[autoSlideIndex - 1].classList.add("active");
 
-    for (i = 0; i < dots.length; i++){
-        dots[i].className = dots[i].className.replace (" active", "");
+    for (let i = 0; i < dots.length; i++){
+        dots[i].classList.remove ("active");
     }
 
-    dots[autoSlideIndex - 1].className += " active";
+    dots[autoSlideIndex - 1].classList.add ("active");
+    
     setTimeout (showSlidesAuto, 30000);
 }
 //SECTION 7 - KONTAKTFORMULAR//
