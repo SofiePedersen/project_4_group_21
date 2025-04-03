@@ -92,7 +92,6 @@ header {
     margin-top: 0.4%;
 }
 
-
 .header__navigation {
     width: 90%;
     height: auto;
@@ -530,6 +529,7 @@ header {
     .slide-box__column:hover .demo {
         opacity: 1 !important;
     }
+
     /*SECTION 5 - Q&A*/
     /*SECTION 6 - INFO */
     /*SECTION 7 - KONTAKTFORMULAR */
