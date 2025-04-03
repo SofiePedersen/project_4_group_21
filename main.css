@@ -143,7 +143,6 @@ header {
     align-items: center;
     padding:20px; 
     font-size: 10px;
-    
 }
 
 .small-header--bottom {
@@ -158,10 +157,6 @@ header {
     justify-content: center;
     align-items: center;
     border: px solid #d0d1d3;
-}
-
-.burger-menu-content {
-    display: flex;
 }
 
 .open-burger-menu {
