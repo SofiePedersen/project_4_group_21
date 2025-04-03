@@ -42,7 +42,6 @@ h3 {
     line-height: 24px;
     color: #000;
 }
-
 p {
     font-family: "Agrandir-narrow";
     font-size: 16px;
@@ -91,6 +90,7 @@ header {
     height: 50%;
     margin-top: 0.4%;
 }
+
 
 .header__navigation {
     width: 90%;
@@ -529,7 +529,6 @@ header {
     .slide-box__column:hover .demo {
         opacity: 1 !important;
     }
-
     /*SECTION 5 - Q&A*/
     /*SECTION 6 - INFO */
     /*SECTION 7 - KONTAKTFORMULAR */
