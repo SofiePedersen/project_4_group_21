@@ -166,7 +166,7 @@ header {
 
 .open-burger-menu {
     background-color: white;
-    max-width: 100vh;
+    max-width: 100vw;
     max-height: 100vh;
     border-right: 1px solid #d0d1d3;
     position: right;
@@ -178,7 +178,6 @@ header {
 
 .burger-menu-top {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #d0d1d3;
@@ -199,13 +198,14 @@ header {
     padding: 10px 0px;
     border: 0px solid #d0d1d3;
     font-size: 10px;
+    background-color: aqua;
 }
 
 .headerlist li:hover {
-    background-color: #ececec;
+    background-color: #cc1d1d;
 }
 
-.headerlink {
+.headerlist li .headerlinks {
     color: red;
 }
 
@@ -495,7 +495,7 @@ header {
 
 @media only screen and (min-width: 1240px) {
     /*HEADER*/
-    .header__header__navigation ul li a {
+    .header__navigation ul li a {
         font-size: 12px;
     }
 
