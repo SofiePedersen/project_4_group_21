@@ -6,19 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>headspace</title>
         <link rel="stylesheet" href="main.css">
-        <script src="script.js" defer></script>
+        <script src="quiz.js" defer></script>
     </head>
 
     <body>
-        <div class="quiz-wrapper">
-            <h2 class="quiz-title">
-                Hvilken frivillig er du?
-            </h2>
-            <h3>
-                Tag vores quiz, og svar på 5 spørgsmål<br>
-                der kan hjælpe dig på vej
-            </h3>
-            <button class="cta-button">Start quiz</button>
+        <div id="quiz-wrapper" class="quiz-wrapper">
+            <div id="textfield" class="textfield">
+                <h2 class="quiz-title">
+                    Hvilken frivillig er du?
+                </h2>
+                <p id="quiz-text" class="quiz-text">
+                    Tag vores quiz, og svar på 5 spørgsmål
+                    der kan hjælpe dig på vej
+                </p>
+                <button id="startQuiz" class="cta-button">Start quiz</button>
+            </div>
         </div>
     </body>
 </html>
