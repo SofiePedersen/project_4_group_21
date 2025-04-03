@@ -78,14 +78,33 @@ body {
 /*SECTION 1 - VIDEO MED JAKOB */
 /*SECTION 2 - QUIZ */
 .quiz-wrapper {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2.5rem;
+    height: 100vh;
+    background-image: url('images/Hoptimist.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 0% 78%;
 }
 
 .quiz-title {
     font-family: 'Agrandir-WideBlackItalic';
     color: #81b428;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
+
+.quiz-text {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.textfield {
+    margin-top: -20rem;
+}
+
 /*SECTION 3 - INFO */
 /*SECTION 4 - SLIDESHOW */
 .section-4 {
@@ -481,17 +500,6 @@ body {
     /*SECTION 2 - QUIZ */
     /*SECTION 3 - INFO */
     /*SECTION 4 - SLIDESHOW */
-    .section-4 {
-        max-height: 500px;
-    }
-
-    .slide-box.active {
-        max-height: 500px;
-    }
-
-    .slide-box__image {
-        max-height: 500px;
-    }
     /*SECTION 5 - Q&A*/
     /*SECTION 6 - INFO */
     /*SECTION 7 - KONTAKTFORMULAR */
