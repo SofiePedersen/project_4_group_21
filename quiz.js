@@ -1,10 +1,3 @@
-document.getElementById("startQuiz").addEventListener("click", startQuiz);
-
-function startQuiz() {
-  document.getElementById("textfield").style.display = "none";
-  document.getElementById("");
-}
-
 /** Jeg laver et array af Data,
  * som jeg vil bruge til at ændre indholdet på de forskellige quiz-sider */
 const quizData = [
@@ -65,4 +58,7 @@ const quizData = [
   }
 ];
 
-console.log(quizDate);
+function nextQuestion(){
+    document.getElementById('quiz-question').innerHTML = question;
+}
+
