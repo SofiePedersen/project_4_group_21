@@ -62,3 +62,48 @@ function nextQuestion(){
     document.getElementById('quiz-question').innerHTML = question;
 }
 
+/**
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+    text += "The number is " + i + "<br>";
+}
+
+document.getElementById("form-question").innerHTML = text;
+
+console.log(text)
+
+let text = "";
+for (let i = 0; i < quizData.answers.length; i++) {
+  text += answers[i] + "<br>";
+}
+
+document.getElementById("form-question").innerHTML = text;
+  
+let text = "";
+
+for (let i = 0; i < quizData.length; i++) {
+  let answers = quizData[i].answers;
+  for (let j = 0; j < answers.length; j++) {
+    text += answers[j] + "<br>";
+  }
+}
+*/
+
+
+let text = "";
+
+for (let i = 0; i < quizData.length; i++) {
+  let answers = quizData[i].answers;  // Går ind i quizdata
+  
+  let answerText = '';  // opretter en lokal string for at gemme min data so far.
+
+  for (let j = 0; j < answers.length; j++) {
+    answerText += answers[j] + "<br>";  // Add each answer to this answerText
+  }
+  text += `<input type="radio" name="questions" /><label for="question">${answerText}</label>`;  // forsøg på at få loopet input og labels ud med svarmuligheder
+}
+
+document.getElementById("form-question").innerHTML = text;
+
+console.log(document.getElementById("form-question"))
