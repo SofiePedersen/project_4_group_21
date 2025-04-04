@@ -26,8 +26,8 @@
 
 h1 {
     font-family: "Agrandir-regular";
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 40px;
+    line-height: 42px;
     color: #000;
 }
 h2 {
@@ -245,6 +245,18 @@ header {
 .hero-image {
     padding: 36px;
     width: 100%;
+    height: 600px;
+    background-image: url(images/headpsaceskilt.webp);
+    background-color: #81b428;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image__textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .hero-image__title {
     display: flex;
@@ -254,6 +266,7 @@ header {
     align-items: center;
     margin-bottom: 0px;
     font-family: 'Agrandir-regular';
+    color: #fff;
 }
 .hero-image__text {
     display: flex;
@@ -261,6 +274,7 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 /*SECTION 1 - VIDEO MED JAKOB */
 .section-1 {
@@ -504,6 +518,21 @@ header {
 /*SECTION 7 - KONTAKTFORMULAR */
 /*SECTION 8 - SOME INFLUENCERS */
 /*FOOTER*/
+footer {
+    background-color: #81b428;
+    width: 100%;
+    padding: 36px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+}
 
 @media only screen and (min-width: 768px) {
     h1 {
