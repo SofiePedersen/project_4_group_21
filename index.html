@@ -13,37 +13,47 @@
         <header></header>
 
         <section class="hero-image">
-            <h1 class="hero-image__title">Er du den, vi mangler?</h1>
-            <p class="hero-image__text"></p>
+            <div class="hero-image__textbox">
+                <h1 class="hero-image__title">Er du den, vi mangler?</h1>
+                <p class="hero-image__text">Det starter med dig</p>
+            </div>
         </section>
 
         <!-- VIDEO MED JAKOB -->
         <section class="section-1">
-            <h2 class="section-1__title">Hvordan er det egentlig at være frivillig?</h2>
-            <p class="section-1__text">Jacob har været frivillig ved headspace som ungerådgiver i to år. 
-                Han kan give et indblik i, hvad det egentlig vil sige at være frivillig hos headspace.
-                <br>
-                Han snakker om, hvordan det er at starte som ny og nervøs, til at være mere sikker i 
-                at åbne døren til de unge, der må have brug for en at tale med. 
-            </p>
-            <div class="section-1__placeholder-video"></div>
+            <div class="section-1__text">
+                <h2>Hvordan er det egentlig at være frivillig?</h2>
+                <p>Jacob har været frivillig ved headspace som ungerådgiver i to år. 
+                    Han kan give et indblik i, hvad det egentlig vil sige at være frivillig hos headspace.
+                    <br>
+                    Han snakker om, hvordan det er at starte som ny og nervøs, til at være mere sikker i 
+                    at åbne døren til de unge, der må have brug for en at tale med. 
+                </p>
+            </div>
+            <div class="section-1__video">
+                <img src="images/headpsaceskilt.webp">
+            </div>
         </section>
 
         <!-- QUIZ -->
         <section class="section-2"></section>
 
         <section class="section-3">
-            <h2 class="section-3__title">Hjælp os med at hjælpe unge</h2>
-            <p class="section-3__text">
-                headspace er drevet af flere end 600 frivillige over hele landet, 
-                og der er næsten altid behov for flere. Uanset om du brænder for at hjælpe, støtte 
-                og rådgive børn og unge, fortælle de gode historier og øge kendskabet til headspace eller 
-                hjælpe med alle de dagligdagsting, der skal til for at drive et headspace – så har vi brug for dig!
-                <br>
-                Det er vigtigt, at du har lyst til at være med til at gøre headspace til et trygt, rart 
-                og hyggeligt sted,  hvor børn og unge kan komme og få talt om deres tvivl, følelser og problemstillinger.
-            </p>
-            <img src="" alt="headspace-støt-unge" >
+            <div class="section-3__text">
+                <h2>Hjælp os med at hjælpe unge</h2>
+                <p>
+                    headspace er drevet af flere end 600 frivillige over hele landet, 
+                    og der er næsten altid behov for flere. Uanset om du brænder for at hjælpe, støtte 
+                    og rådgive børn og unge, fortælle de gode historier og øge kendskabet til headspace eller 
+                    hjælpe med alle de dagligdagsting, der skal til for at drive et headspace – så har vi brug for dig!
+                    <br>
+                    Det er vigtigt, at du har lyst til at være med til at gøre headspace til et trygt, rart 
+                    og hyggeligt sted,  hvor børn og unge kan komme og få talt om deres tvivl, følelser og problemstillinger.
+                </p>
+            </div>
+            <div class="section-img__container">
+                <img src="images/headpsaceskilt.webp" alt="headspace-støt-unge">
+            </div>
         </section>
 
         <!-- SLIDESHOW -->
@@ -53,18 +63,22 @@
         <section class="section-5"></section>
 
         <section class="section-6">
-            <img src="" alt="headspace-støt-unge" >
-            <h2 class="section-6__title">Vi er et trygt fælleskab - også for dig</h2>
-            <p class="section-6__text">
-                Det er vigtigt for os, at alle der går gennem headspaces døre, har en rar oplevelse 
-                - det gælder også vores frivillige. 
-                <br>
-                Der er aldrig en frivillig, der står alene. Du vil blive klædt ordentlig på, 
-                til at fortage samtaler med de unge, i form af workshops, men der vil også altid være en mere erfaren frivillig, 
-                der er med til de første mange samtaler, du vil have med den unge, for at skabe et trygt rum for jer begge. 
-                Der er også altid mulighed for, at tage fat i vores uddannede medarbejdere, hvis der er noget du er tvivl om 
-                eller har burg for at drøfte med et menneske med erfaring.
-            </p>
+            <div class="section-6__text"></div>
+                <h2>Vi er et trygt fælleskab - også for dig</h2>
+                <p>
+                    Det er vigtigt for os, at alle der går gennem headspaces døre, har en rar oplevelse 
+                    - det gælder også vores frivillige. 
+                    <br>
+                    Der er aldrig en frivillig, der står alene. Du vil blive klædt ordentlig på, 
+                    til at fortage samtaler med de unge, i form af workshops, men der vil også altid være en mere erfaren frivillig, 
+                    der er med til de første mange samtaler, du vil have med den unge, for at skabe et trygt rum for jer begge. 
+                    Der er også altid mulighed for, at tage fat i vores uddannede medarbejdere, hvis der er noget du er tvivl om 
+                    eller har burg for at drøfte med et menneske med erfaring.
+                </p>
+            </div>
+            <div class="section-img__container">
+                <img src="images/the.webp" alt="headspace-støt-unge">
+            </div>
         </section>
         
         <!-- KONTAKTFORMULAR -->
@@ -77,8 +91,8 @@
 
         <footer>
             <div>
-                <ul>
-                    <li>
+                <ul class="footer__row">
+                    <li class="footer__column">
                         <h4>Headspace sekretariat</h4>
                         <p>Østergade 5, 3 sal</p>
                         <p>1100 København K</p>
@@ -89,28 +103,31 @@
                         <p>Det Sociale Netværk</p>
                         <p>CVR-nummer: 31920124</p>
                     </li>
-                    <li>
+                    <li class="footer__column">
                         <h4>For unge</h4>
                         <a href="">Find nærmeste headspace</a>
                         <a href="">Book en samtale</a>
                         <a href="">Chat med os</a>
                         <a href="">Klagevejledning</a>
                     </li>
-                    <li>
+                </ul>
+                <ul class="footer__row">
+                    <li class="footer__column">
                         <h4>Om headspace</h4>
                         <a href="">Hvad er headspace?</a>
                         <a href="">Rådgivningen</a>
                         <a href="">Job</a>
                         <a href="">Privatlivspolitik</a>
                     </li>
-                    <li>
+                    <li class="footer__column">
                         <h4>Kontakt</h4>
                         <a href="">Kontakt os</a>
                         <a href="">Bliv frivillig </a>
                         <a href="">Bliv medlem</a>
                         <a href="">Giv en donation</a>
                     </li>
-                    <li>
+                </ul>
+                    <li class="list__socials">
                         <h4>headspace socials</h4>
                         <a href=""></a>
                         <a href=""></a>
@@ -121,7 +138,6 @@
                     <li>
                         <img src="" alt="" />
                     </li>
-                </ul>
                 <p>headspace er på ingen måde tilknyttet, sponsoreret eller har anden tilslutning til ejeren af meditations- og mindfulness-app’en Headspace Inc. headspace er inspireret af en australsk indsats af samme navn. Grundideen i headspace er, at hjælpen skal være på de unges præmisser – ikke på systemets. Sammenhæng, nem tilgængelighed og samarbejde på tværs er nøglen til at hjælpe unge i headspace. </p>
                 <p>© 2013 – 2023 headspace | GoGrafix | Budgethost</p>
             </div>
