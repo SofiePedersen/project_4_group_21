@@ -3,15 +3,13 @@
 
 const burgerIcon = document.getElementById("burgermenu");
 const showMenu = document.getElementById("showMenu");
-const hideMenuIcon = document.getElementById("hideMenu");
 
-burgerIcon.addEventListener("click", function() {
-    showMenu.style.display = "block";
-    populateImages();
+burgerIcon.addEventListener("click", function () {
+    if (showMenu.style.display === "block") {
+        showMenu.style.display = "none";
+    } else {
+        showMenu.style.display = "block";
+        populateImages(); // kun kald hvis vi åbner menuen
+    }
 });
-
-hideMenuIcon.addEventListener("click", function(){
-    showMenu.style.display = "none";
-});
-
 

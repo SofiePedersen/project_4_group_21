@@ -144,6 +144,19 @@ header {
     font-size: 10px;
 }
 
+.støt-button {
+    background-color: #8BC34A; /* grøn farve som på billedet */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Agrandir-textbold';
+    margin-right: 0px;
+    display: inline-block;
+}
+
+
 .small-header--bottom {
     display: grid;
     grid-template-columns: 5fr 95fr;
@@ -182,24 +195,27 @@ header {
     align-items: center;
     text-align: left;
     padding-left: 20px;
-    font-size: 10px;
+    font-size: 30px;
 }
 
 .headerlist li {
     list-style: none;
     width: 100%;
-    padding: 10px 0px;
+    padding: 10px 15px;
     border: 0px solid #d0d1d3;
-    font-size: 10px;
-    background-color: aqua;
+    font-size: 20px;
+
+    background-color: rgb(255, 255, 255);
 }
 
 .headerlist li:hover {
-    background-color: #cc1d1d;
+    background-color: #dddddd;
 }
 
-.headerlist li .headerlinks {
-    color: red;
+.headerlink {
+    color: rgb(0, 0, 0);
+    font-family: 'Agrandir-TextBold';
+    text-decoration: none;
 }
 
 
@@ -208,21 +224,7 @@ header {
     padding-top: 20px;
 }
 
-.navigation-btns {
-    background-color: white;
-    padding: 12.5px;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-    border-bottom: 1px solid #d0d1d3;
-}
 
-.navigation-btns a {
-    text-decoration: none;
-    color: black;
-}
 
 .language-btns {
     background-color: white;
