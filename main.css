@@ -524,15 +524,29 @@ footer {
     padding: 36px;
 }
 
+footer li {
+    list-style-type: none;
+}
+
 .footer__row {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .footer__column {
     display: flex;
     flex-direction: column;
 }
+
+.footer__column p {
+    margin: 0;
+}
+
+.footer__column h4 {
+    margin: 0;
+}
+
 
 @media only screen and (min-width: 768px) {
     h1 {
