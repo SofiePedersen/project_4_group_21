@@ -242,7 +242,58 @@ header {
 }
 
 /*HERO*/
+.hero-image {
+    padding: 36px;
+    width: 100%;
+}
+.hero-image__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    font-family: 'Agrandir-regular';
+}
+.hero-image__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 /*SECTION 1 - VIDEO MED JAKOB */
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.section-1__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.section-1__text h2 {
+    margin-bottom: 0px;
+}
+
+.section-1__video {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1__video img {
+    width: 70%;
+}
 /*SECTION 2 - QUIZ */
 .quiz-wrapper {
     display: flex;
@@ -307,6 +358,37 @@ header {
 }
 
 /*SECTION 3 - INFO */
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.section-3__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.section-3__text h2 {
+    margin-bottom: 0px;
+}
+
+.section-img__container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-img__container img {
+    width: 70%;
+}
 /*SECTION 4 - SLIDESHOW */
 .section-4 {
     background-color: #CCBDDD;
@@ -388,6 +470,37 @@ header {
 
 /*SECTION 5 - Q&A*/
 /*SECTION 6 - INFO */
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    background-color: #F7CE5B;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.section-6__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.section-6__text h2 {
+    margin-bottom: 0px;
+}
+
+.section-img__container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-img__container img {
+    width: 70%;
+}
 /*SECTION 7 - KONTAKTFORMULAR */
 /*SECTION 8 - SOME INFLUENCERS */
 /*FOOTER*/
