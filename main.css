@@ -556,10 +556,12 @@ header {
 
 .some-box__influencer--text p {
     margin-top: 0;
+    font-family: "Agrandir-ThinItalic";
 }
 
 .some-box__influencer--text h2 {
-    margin-bottom: 2px;
+    margin-bottom: 0px;
+    font-size: 18px;
 }
 
 .some-box__influencer--icons {
