@@ -80,19 +80,24 @@ function showQuestion(){
 
     changeQuizTitle();
     showOptions();
-
 };
 
 function changeQuizTitle(){
-    quizQuestionTitle.innerHTML = quizData[currentQuestion].question;    
+    quizQuestionTitle.innerHTML = quizData[currentQuestion].question;
 };
 
 nextQuestionBtn.addEventListener('click', nextQuestion);
 
 function nextQuestion(){
-    currentQuestion++;
-    changeQuizTitle();
-    showOptions();
+    currentQuestion++;    
+    if (currentQuestion <= quizData.length - 1){
+        
+        changeQuizTitle();
+        showOptions();
+    }
+    else {
+        alert('nyside')
+    }
 };
 
 prevQuestionBtn.addEventListener('click', prevQuestion);
@@ -108,7 +113,6 @@ function prevQuestion(){
             quizQuestionCard.style.display = "none";
             quizIntroCard.style.display = "flex";
         }
-
 };
 
 // Her opretter jeg er for-loop. Mit forloop opretter en variable kaldet i. Jeg skriver så
@@ -119,7 +123,7 @@ function showOptions(){
     quizForm.innerHTML = "";
 
     for (let i = 0; i < quizData[currentQuestion].answers.length; i++) {
-        console.log(quizData[currentQuestion].answers[i]);
+    //  console.log(quizData[currentQuestion].answers[i]);
     
     const createQuizDivWrapper = document.createElement("div");
     quizForm.appendChild(createQuizDivWrapper);
