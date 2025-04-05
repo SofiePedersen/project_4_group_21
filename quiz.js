@@ -106,7 +106,7 @@ function prevQuestion(){
         }
         else {
             quizQuestionCard.style.display = "none";
-            quizIntroCard.style.display = "block";
+            quizIntroCard.style.display = "flex";
         }
 
 };
