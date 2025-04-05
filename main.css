@@ -341,6 +341,7 @@ header {
 
 .quiz-card {
     background-color: coral;
+    display: none;
 }
 
 .quiz-card-wrapper {

@@ -91,19 +91,56 @@ for (let i = 0; i < quizData.length; i++) {
 */
 
 
-let text = "";
+// let text = "";
 
-for (let i = 0; i < quizData.length; i++) {
-  let answers = quizData[i].answers;  // Går ind i quizdata
+// for (let i = 0; i < quizData.length; i++) {
+// //   console.log(quizData[i].answers);
+    
+//   let answers = quizData[i].answers;  // Går ind i quizdata
   
-  let answerText = '';  // opretter en lokal string for at gemme min data so far.
+//   let answerText = '';  // opretter en lokal string for at gemme min data so far.
 
-  for (let j = 0; j < answers.length; j++) {
-    answerText += answers[j] + "<br>";  // Add each answer to this answerText
-  }
-  text += `<input type="radio" name="questions" /><label for="question">${answerText}</label>`;  // forsøg på at få loopet input og labels ud med svarmuligheder
+//   for (let j = 0; j < answers.length; j++) {
+//     answerText += answers[j] + "<br>";  // Add each answer to this answerText
+//   }
+//   text += `<input type="radio" name="questions" /><label for="question">${answerText}</label>`;  // forsøg på at få loopet input og labels ud med svarmuligheder
+// }
+
+// document.getElementById("form-question").innerHTML = text;
+
+
+
+
+
+
+
+/* ELEMENTS */
+const startQuizBtn = document.getElementById('startQuiz')
+const quizIntroCard = document.getElementById('quiz-wrapper')
+const quizQuestionCard = document.getElementById('quiz-question-card')
+const quizQuestionTitle = document.getElementById('quiz-question')
+const nextQuestionBtn = document.getElementById('quiz-forward-btn')
+
+/* VALUES */
+let currentQuestion = 0; 
+
+startQuizBtn.addEventListener('click', showQuestion);
+
+function showQuestion(){
+    quizIntroCard.style.display = "none";
+    quizQuestionCard.style.display = "block";
+
+    changeQuizTitle();
 }
 
-document.getElementById("form-question").innerHTML = text;
+function changeQuizTitle(){
+    quizQuestionTitle.innerHTML = quizData[currentQuestion].question;    
+}
 
-console.log(document.getElementById("form-question"))
+nextQuestionBtn.addEventListener('click', nextQuestion);
+
+function nextQuestion(){
+    currentQuestion++;
+    changeQuizTitle();
+}
+
