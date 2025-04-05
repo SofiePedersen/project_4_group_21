@@ -66,6 +66,7 @@ const quizIntroCard = document.getElementById('quiz-wrapper');
 const quizQuestionCard = document.getElementById('quiz-question-card');
 const quizQuestionTitle = document.getElementById('quiz-question');
 const nextQuestionBtn = document.getElementById('quiz-forward-btn');
+const prevQuestionBtn = document.getElementById('quiz-back-btn')
 const quizForm = document.getElementById('form-question');
 
 /* VALUES */
@@ -92,6 +93,22 @@ function nextQuestion(){
     currentQuestion++;
     changeQuizTitle();
     showOptions();
+};
+
+prevQuestionBtn.addEventListener('click', prevQuestion);
+
+function prevQuestion(){
+    
+        if (currentQuestion > 0){
+            currentQuestion--;
+            changeQuizTitle();
+            showOptions();
+        }
+        else {
+            quizQuestionCard.style.display = "none";
+            quizIntroCard.style.display = "block";
+        }
+
 };
 
 // Her opretter jeg er for-loop. Mit forloop opretter en variable kaldet i. Jeg skriver så
