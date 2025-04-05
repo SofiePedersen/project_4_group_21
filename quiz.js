@@ -1,5 +1,7 @@
+
 /** Jeg laver et array af Data,
  * som jeg vil bruge til at ændre indholdet på de forskellige quiz-sider */
+
 const quizData = [
   {
     question: 
@@ -58,68 +60,13 @@ const quizData = [
   }
 ];
 
-function nextQuestion(){
-    document.getElementById('quiz-question').innerHTML = question;
-}
-
-/**
-let text = "";
-
-for (let i = 0; i < 5; i++) {
-    text += "The number is " + i + "<br>";
-}
-
-document.getElementById("form-question").innerHTML = text;
-
-console.log(text)
-
-let text = "";
-for (let i = 0; i < quizData.answers.length; i++) {
-  text += answers[i] + "<br>";
-}
-
-document.getElementById("form-question").innerHTML = text;
-  
-let text = "";
-
-for (let i = 0; i < quizData.length; i++) {
-  let answers = quizData[i].answers;
-  for (let j = 0; j < answers.length; j++) {
-    text += answers[j] + "<br>";
-  }
-}
-*/
-
-
-// let text = "";
-
-// for (let i = 0; i < quizData.length; i++) {
-// //   console.log(quizData[i].answers);
-    
-//   let answers = quizData[i].answers;  // Går ind i quizdata
-  
-//   let answerText = '';  // opretter en lokal string for at gemme min data so far.
-
-//   for (let j = 0; j < answers.length; j++) {
-//     answerText += answers[j] + "<br>";  // Add each answer to this answerText
-//   }
-//   text += `<input type="radio" name="questions" /><label for="question">${answerText}</label>`;  // forsøg på at få loopet input og labels ud med svarmuligheder
-// }
-
-// document.getElementById("form-question").innerHTML = text;
-
-
-
-
-
-
-
 /* ELEMENTS */
-const startQuizBtn = document.getElementById('startQuiz')
-const quizIntroCard = document.getElementById('quiz-wrapper')
-const quizQuestionCard = document.getElementById('quiz-question-card')
-const quizQuestionTitle = document.getElementById('quiz-question')
-const nextQuestionBtn = document.getElementById('quiz-forward-btn')
+const startQuizBtn = document.getElementById('startQuiz');
+const quizIntroCard = document.getElementById('quiz-wrapper');
+const quizQuestionCard = document.getElementById('quiz-question-card');
+const quizQuestionTitle = document.getElementById('quiz-question');
+const nextQuestionBtn = document.getElementById('quiz-forward-btn');
+const quizForm = document.getElementById('form-question');
 
 /* VALUES */
 let currentQuestion = 0; 
@@ -131,16 +78,43 @@ function showQuestion(){
     quizQuestionCard.style.display = "block";
 
     changeQuizTitle();
-}
+    showOptions();
+
+};
 
 function changeQuizTitle(){
     quizQuestionTitle.innerHTML = quizData[currentQuestion].question;    
-}
+};
 
 nextQuestionBtn.addEventListener('click', nextQuestion);
 
 function nextQuestion(){
     currentQuestion++;
     changeQuizTitle();
-}
+    showOptions();
+};
 
+// Her opretter jeg er for-loop. Mit forloop opretter en variable kaldet i. Jeg skriver så
+// Hvis I er mindre end længden på svarmuligheder i mit array quizData, så øger vi i's værdi
+// Derefter beder jeg den i console.loggen at loop de enkelte svarmuligheder ud hver for sig.
+
+function showOptions(){
+    quizForm.innerHTML = "";
+
+    for (let i = 0; i < quizData[currentQuestion].answers.length; i++) {
+        console.log(quizData[currentQuestion].answers[i]);
+    
+    const createQuizDivWrapper = document.createElement("div");
+    quizForm.appendChild(createQuizDivWrapper);
+
+    const createQuizRadioInput = document.createElement("input");
+    createQuizRadioInput.type = "radio";
+    createQuizRadioInput.name = "questions";
+    createQuizDivWrapper.appendChild(createQuizRadioInput);
+
+    const createQuizLabel = document.createElement("label");
+    createQuizLabel.for = "questions-" + i;
+    createQuizLabel.innerHTML = quizData[currentQuestion].answers[i];
+    createQuizDivWrapper.appendChild(createQuizLabel);
+    };
+};
