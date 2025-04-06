@@ -7,7 +7,7 @@ const quizData = [
     question: 
       "Hvor mange timer kan du være tilgængelig om måneden?",
     
-    answers: [
+    answers:[
       "6 - 8 timer", 
       "12 timer", 
       "Jeg har brug for fleksible tider"

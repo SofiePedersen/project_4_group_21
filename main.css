@@ -42,7 +42,7 @@ h3 {
     line-height: 24px;
     color: #000;
 }
-p {
+p, a {
     font-family: "Agrandir-narrow";
     font-size: 16px;
     line-height: 24px;
@@ -578,8 +578,10 @@ footer {
 
 footer li {
     list-style-type: none;
+    margin-bottom:
 }
 
+/*
 .footer__row {
     display: flex;
     flex-direction: row;
@@ -598,7 +600,7 @@ footer li {
 .footer__column h4 {
     margin: 0;
 }
-
+*/
 
 @media only screen and (min-width: 768px) {
     h1 {
