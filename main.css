@@ -521,6 +521,93 @@ header {
     width: 70%;
 }
 /*SECTION 7 - KONTAKTFORMULAR */
+
+.email__container {
+    padding-left: 20px;
+}
+.email__container input[type="email"]::placeholder {
+    font-style: italic;
+}
+.email__container input[type="email"] {
+    background-color: rgba(200, 200, 200, 0.200);
+    width: 60%; 
+    padding: 10px;
+    border: 1px solid lightgray; 
+    border-radius: 20px; 
+    font-size: 16px;
+}
+        /*  Buttons i kontaktformular styles herunder */
+/* Skjuler standard layout på radio- og checkbox-knapper */
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+}
+/* Styling af labels generelt */
+/* user select: none, gør at teksten ikke kan markeres */
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    padding-left: 60px;
+    user-select: none;
+}
+/* Styling af radio-knapper */
+label .radio {
+    position: absolute;
+    left: 20;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+/* Når radio-knappen er valgt (der kan kun vælges én) */
+input[type="radio"]:checked + .radio {
+    background-color: #81b428;
+}
+/* Flueben til valgt radio-knap */
+input[type="radio"]:checked + .radio::after {
+    content: '\2713'; /* Unicode flueben */
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+/* Hover-effekt for radio-knapper */
+input[type="radio"]:not(:checked):hover + .radio,
+input[type="radio"]:checked:hover + .radio {
+    background-color: gray;
+}
+/* Styling af runde checkboxes til valgte positioner*/
+label .checkbox {
+    position: absolute;
+    left: 20;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%; /* Gør dem runde */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+/* Når checkboxen er valgt, vises en lille grøn cirkel */
+input[type="checkbox"]:checked + .checkbox::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #81b428;
+    border-radius: 50%;
+}
+/* Hover-effekt til checkboxes */
+input[type="checkbox"]:not(:checked):hover + .checkbox,
+input[type="checkbox"]:checked:hover + .checkbox {
+    background-color: lightgray;
+}
+
 /*SECTION 8 - SOME INFLUENCERS */
 .section-8 {
     background-color: #CCBDDD;
