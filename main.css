@@ -538,29 +538,61 @@ header {
 
 /*SECTION 7 - KONTAKTFORMULAR */
 
-.email__container {
-    padding-left: 20px;
+.kontakt__tekstbox {
+    margin: 20px;
 }
-
-.email__container input[type="email"]::placeholder {
-    font-style: italic;
+.email-container label {
+    color: #81b428;
 }
-
 .email__container input[type="email"] {
     background-color: rgba(200, 200, 200, 0.200);
-    width: 60%; 
+    width: 90%; 
     padding: 10px;
+    margin: auto;
     border: 1px solid lightgray; 
     border-radius: 20px; 
     font-size: 16px;
 }
+.email__container {
+    padding-left: 20px;
+    width: 90%;
+}
+.email__container input[type="email"]::placeholder {
+    font-style: italic;
+}
+.radios {
+    margin: 20px;
+}
+.positioner-button {
+    background-color: rgba(200, 200, 200, 0.200);
+    border: 1px solid lightgray; 
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 90%;
+    margin: auto;
+    display: block;
+    
+}
+.checkbox__grid label {
+    margin-bottom: 40px;
+}
+
+/*styling af popup*/
+.kontakt__popup {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    display: none; /*skjuler pop-up som standard */
+}
 
 /*  Buttons i kontaktformular styles herunder */
+
 /* Skjuler standard layout på radio- og checkbox-knapper */
 input[type="radio"], input[type="checkbox"] {
     display: none;
 }
-
 /* Styling af labels generelt */
 /* user select: none, gør at teksten ikke kan markeres */
 label {
@@ -572,7 +604,6 @@ label {
     padding-left: 60px;
     user-select: none;
 }
-
 /* Styling af radio-knapper */
 label .radio {
     position: absolute;
@@ -584,28 +615,23 @@ label .radio {
     border-radius: 4px;
     transition: background-color 0.3s, border-color 0.3s;
 }
-
 /* Når radio-knappen er valgt (der kan kun vælges én) */
 input[type="radio"]:checked + .radio {
     background-color: #81b428;
 }
-
 /* Flueben til valgt radio-knap */
 input[type="radio"]:checked + .radio::after {
     content: '\2713'; /* Unicode flueben */
     color: white;
     font-size: 16px;
     position: absolute;
-    top: 2px;
-    left: 5px;
+    left: 3px;
 }
-
 /* Hover-effekt for radio-knapper */
 input[type="radio"]:not(:checked):hover + .radio,
 input[type="radio"]:checked:hover + .radio {
     background-color: gray;
 }
-
 /* Styling af runde checkboxes til valgte positioner*/
 label .checkbox {
     position: absolute;
@@ -613,13 +639,12 @@ label .checkbox {
     width: 20px;
     height: 20px;
     border: 2px solid black;
-    border-radius: 50%; /* Gør dem runde */
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s, border-color 0.3s;
 }
-
 /* Når checkboxen er valgt, vises en lille grøn cirkel */
 input[type="checkbox"]:checked + .checkbox::after {
     content: '';
@@ -628,7 +653,6 @@ input[type="checkbox"]:checked + .checkbox::after {
     background-color: #81b428;
     border-radius: 50%;
 }
-
 /* Hover-effekt til checkboxes */
 input[type="checkbox"]:not(:checked):hover + .checkbox,
 input[type="checkbox"]:checked:hover + .checkbox {
