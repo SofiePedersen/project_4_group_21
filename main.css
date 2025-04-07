@@ -84,7 +84,7 @@ header {
     padding: 1rem;
 }
 
-.header__top {
+.header-wrapper {
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -95,8 +95,8 @@ header {
     width: 15%;
 }
 
-.header__navigation {
-    width: 80%;
+.header-wrapper__navigation {
+    width: 100%;
     background-color: aqua;
     display: flex;
     flex-direction: row;
@@ -104,28 +104,27 @@ header {
     align-items: center;
 }
 
-.header__buttons {
+.header-full-size__btns {
+    display: inherit;
+    gap: 20px;
+}
+
+.header-wrapper__navigation ul {
     display: inherit;
 }
 
-.header__navigation ul {
-    display: inherit;
-}
-
-.header__navigation ul li {
+.header-wrapper__navigation ul li {
     list-style-type: none;
-    margin-right: 0.5rem;
+    margin-right: 3rem;
 }
 
-.header__navigation ul li a {
+.header-wrapper__navigation ul li a {
     text-decoration: none;
-    padding: 10px 18px;
     color: black;
-    font-weight: 700;
     font-size: 1rem;
 }
 
-.header__navigation ul li a:hover {
+.header-wrapper__navigation ul li a:hover {
     color: #81b428;
 }
 
