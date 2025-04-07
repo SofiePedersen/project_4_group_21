@@ -13,3 +13,22 @@ burgerIcon.addEventListener("click", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const omToggle = document.getElementById("om-toggle");
+    const omDropdown = document.getElementById("om-dropdown");
+    const parentLi = omToggle.parentElement;
+
+    omToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        // Toggle class to show/hide dropdown
+        parentLi.classList.toggle("open");
+    });
+
+    // Optional: Click outside to close dropdown
+    document.addEventListener("click", (e) => {
+        if (!parentLi.contains(e.target)) {
+            parentLi.classList.remove("open");
+        }
+    });
+});
