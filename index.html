@@ -7,10 +7,83 @@
         <title>headspace</title>
         <link rel="stylesheet" href="main.css">
         <script src="script.js" defer></script>
+        <script src="header.js" defer></script> <!-- REMOVE-->
     </head>
 
     <body>
-        <header></header>
+     <!-- HEADER FULL SCREEN -->
+        <header>
+            <div class="header-wrapper">
+                <img class="header-logo-image" id="logo-image" src="images/headspace-logo-green.png" alt="headspace-logo-green">
+                <nav class="header-wrapper__navigation">
+                    <ul>
+                        <li><a href="#">International Team</a></li>
+                        <li><a href="#">Om</a></li>
+                        <li><a href="#">Bliv Frivillig</a></li>
+                    </ul>
+                </nav>
+                <div class="header-full-size__btns">
+                    <button class="cta-button--long" >Headspace Family</button>
+                    <button class="cta-button--long" >Støt</button>
+                </div>
+            </div>   
+        </header>
+
+        <div class="small-header">
+            <div class="small-header--top">
+                <img id="logo-small-header" src="images/headspace-logo-green.png" alt="logo-small-header">
+                
+                <a href="#" class="cta-button">STØT</a>
+
+                <div id="burgermenu" class="small-header-burgermenu">
+                    <img src="images/burger-menu-icon-black.svg" alt="burger-menu-icon">
+                </div>
+            </div>
+        </div>
+
+        <div class="burger-menu-content">
+            <div id="showMenu" class="open-burger-menu">
+                
+                <ul class="headerlist">
+                    <li><a class="headerlink" href="#">International team</a></li>
+                    <li class="has-dropdown" id="om-dropdown-item">
+                        <a href="#" class="headerlink">Om</a>
+                        <ul class="dropdown" id="om-dropdown">
+                            <li><a class="headerlink" href="#">Item 1</a></li>
+                            <li><a class="headerlink" href="#">Item 2</a></li>
+                            <li><a class="headerlink" href="#">Item 3</a></li>
+                            <li><a class="headerlink" href="#">Item 4</a></li>
+                            <li><a class="headerlink" href="#">Item 5</a></li>
+                            <li><a class="headerlink" href="#">Item 6</a></li>
+                            <li><a class="headerlink" href="#">Item 7</a></li>
+                            <li><a class="headerlink" href="#">Item 8</a></li>
+                            <li><a class="headerlink" href="#">Item 9</a></li>
+                            <li><a class="headerlink" href="#">Item 10</a></li>
+                            <li><a class="headerlink" href="#">Item 11</a></li>
+                            <li><a class="headerlink" href="#">Item 12</a></li>
+                            <li><a class="headerlink" href="#">Item 13</a></li>
+                            <li><a class="headerlink" href="#">Item 14</a></li>
+                        </ul>
+                    </li>            
+                    <li class="has-dropdown" id="frivillig-dropdown-item">
+                        <a href="#" class="headerlink">Bliv frivillig</a>
+                        <ul class="dropdown" id="frivillig-dropdown">
+                            <li><a class="headerlink" href="#">Ansøg nu</a></li>
+                            <li><a class="headerlink" href="#">Læs mere</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="headerlink" href="#">Headspace Family</a></li>
+                    <li><a class="headerlink" href="#">Støt</a></li>
+                </ul>
+                
+                <div class="burger-menu-bottom">
+                    <div class="language-btns">
+                        <button class="en-btn">English</button>
+                        <img src="images/check-mark-black-svg.svg" alt="checkmark-alt-txt">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="hero-image">
             <div class="hero-image__textbox">
