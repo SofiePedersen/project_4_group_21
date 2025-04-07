@@ -96,7 +96,7 @@ header {
 
 
 .header__navigation {
-    width: 90%;
+    width: 80%;
     height: auto;
     align-items: left;
     display: flex;
@@ -123,6 +123,34 @@ header {
 
 .header__navigation ul li a:hover {
     background-color: #efeff0;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.header-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background-color: #8BC34A; /* grøn farve som på billedet */
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Agrandir-textbold';
+    margin-right: 0px;
+    display: inline-block;
+}
+
+.header-btn:hover {
+    background-color: #27ae60;
 }
 
 #logo-image {
