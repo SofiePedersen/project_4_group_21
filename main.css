@@ -1,4 +1,5 @@
-/*IMPORTED FONTS*/
+/* IMPORTED FONTS */
+
 @font-face {
     font-family: 'Agrandir-regular';
     src: url(fonts/Agrandir-Regular.otf);
@@ -24,24 +25,35 @@
     src: url(fonts/Agrandir-TextBold.otf);
 }
 
+/* UNIVERSAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1 {
     font-family: "Agrandir-regular";
     font-size: 40px;
     line-height: 42px;
     color: #000;
 }
+
 h2 {
     font-family: "Agrandir-regular";
     font-size: 24px;
     line-height: 28px;
     color: #000;
 }
+
 h3 {
     font-family: "Agrandir-regular";
     font-size: 24px;
     line-height: 24px;
     color: #000;
 }
+
 p, a {
     font-family: "Agrandir-narrow";
     font-size: 16px;
@@ -49,7 +61,7 @@ p, a {
     color: #000;
 }
 
-/*BUTTONS*/
+/* BUTTONS */
 .cta-button {
     display: inline-block;
     width: 105px;
@@ -84,15 +96,11 @@ p, a {
     background-color: #648D1C;
 }
 
-/* UNIVERSAL*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.cta-button--long {
+    background-color: #648D1C;
 }
 
-/*HEADER*/
+/* HEADER */
 
 header {
     background-color: #fff;
@@ -236,12 +244,10 @@ header {
     display: block;
 }
 
-
 .burger-menu-bottom {
     background-color: #d0d1d3;
     padding-top: 20px;
 }
-
 
 .language-btns {
     background-color: white;
@@ -260,7 +266,7 @@ header {
     font-size: 14px;
 }
 
-/*HERO*/
+/* HERO */
 .hero-image {
     padding: 36px;
     width: 100%;
