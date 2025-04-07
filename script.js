@@ -1,6 +1,8 @@
 //HEADER//
 //SECTION 2 - QUIZ//
 //SECTION 4 - SLIDESHOW
+
+// Alberte's Javascript
 //Manuelt slideshow - swipe funktion
 let manualSlideIndex = 1;
 let startX = 0; 
