@@ -777,12 +777,14 @@ footer a:hover {
     margin-bottom: 1rem;
 }
 
-.footer-wrapper__list-socials__raadgivning-image {
-    margin-left: auto;
-    margin-right: auto;
+.footer-wrapper__list-socials__raadgivning__container {
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper__list-socials__raadgivning-image {
     width: 25%;
-    height: 50%;
 }
 
 .footer-bottom {
@@ -937,7 +939,6 @@ footer a:hover {
     /*FOOTER*/
     .footer-wrapper__list-socials__raadgivning-image {
         width: 20%;
-        margin-left: auto;
     }
 
     Footer h4 {
@@ -948,9 +949,9 @@ footer a:hover {
     }
 
     .footer-wrapper__list-socials__so-me-icons li a img {
-        width: 30px;
+        width: 25px;
 
-    }    
+    }   
 }
 
 @media only screen and (min-width: 1240px) {
@@ -991,12 +992,17 @@ footer a:hover {
     footer {
         display: flex;
         flex-wrap: wrap;
+        padding: 2.5rem;
+    }
+
+    .footer-wrapper {
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .footer-wrapper__info-cards {
         width: 10vw;
         margin-bottom: 1rem;
-        background-color: red;
     }
 
     .footer-wrapper {
@@ -1013,7 +1019,16 @@ footer a:hover {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-bottom: 0rem;
+    }
+
+    .footer-wrapper__list-socials__raadgivning__container {
+        margin-left: -7rem;
+        justify-content: flex-end;
+    }
+
+    .footer-wrapper__list-socials__raadgivning-image {
+        width: 30%;
+        margin-top: -90px;
     }
 }
 
