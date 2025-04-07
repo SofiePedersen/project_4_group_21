@@ -65,6 +65,21 @@ p, a {
     text-decoration: none;
 }
 
+.cta-button--long {
+    font-size: 14px;
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: #81b428;
+    font-family: "Agrandir-regular";
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    text-decoration: none;
+}
+
 .cta-button:hover {
     background-color: #648D1C;
 }
@@ -97,7 +112,6 @@ header {
 
 .header-wrapper__navigation {
     width: 100%;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -790,6 +804,21 @@ footer a:hover {
         border-radius: 20px;
         font-size: 16px;
         line-height: 40px;
+    }
+
+    .cta-button--long {
+        font-size: 14px;
+        display: inline-block;
+        width: 140px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #fff;
+        background-color: #81b428;
+        font-family: "Agrandir-regular";
+        text-align: center;
+        color: #fff;
+        line-height: 40px;
+        text-decoration: none;
     }
     
     /*HEADER*/
