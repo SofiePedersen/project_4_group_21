@@ -949,10 +949,32 @@ footer a:hover {
     /*SECTION 7 - KONTAKTFORMULAR */
     /*SECTION 8 - SOME INFLUENCERS */
     /*FOOTER*/
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-wrapper__info-cards {
+        width: 10vw;
+        margin-bottom: 1rem;
+        background-color: red;
+    }
+
     .footer-wrapper {
         display: flex;
         flex-wrap: nowrap;
         gap: 1rem;
+    }
+
+    .footer-wrapper__list-socials {
+        margin-top: 0rem;
+    }
+
+    .footer-wrapper__list-socials__so-me-icons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0rem;
     }
 }
 
