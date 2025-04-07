@@ -14,21 +14,34 @@ burgerIcon.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const omToggle = document.getElementById("om-toggle");
-    const omDropdown = document.getElementById("om-dropdown");
-    const parentLi = omToggle.parentElement;
+    const dropdownItems = [
+        document.getElementById("om-dropdown-item"),
+        document.getElementById("frivillig-dropdown-item")
+    ];
 
-    omToggle.addEventListener("click", (e) => {
-        e.preventDefault();
+    dropdownItems.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            // Prevent default behavior if clicking the main link
+            if (e.target.tagName === "A" && e.target.getAttribute("href") === "#") {
+                e.preventDefault();
+            }
 
-        // Toggle class to show/hide dropdown
-        parentLi.classList.toggle("open");
+            // Toggle current dropdown
+            item.classList.toggle("open");
+
+            // Stop event from bubbling up to document
+            e.stopPropagation();
+        });
     });
 
-    // Optional: Click outside to close dropdown
+    // Click outside closes all dropdowns
     document.addEventListener("click", (e) => {
-        if (!parentLi.contains(e.target)) {
-            parentLi.classList.remove("open");
-        }
+        dropdownItems.forEach((item) => {
+            if (!item.contains(e.target)) {
+                item.classList.remove("open");
+            }
+        });
     });
 });
+
+
