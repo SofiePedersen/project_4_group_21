@@ -7,81 +7,83 @@
         <script src="kontaktformular.js" defer></script>
     </head>
     <body>
-        <div class="content-wrapper">
-            <div class="kontakt__tekstbox">
-              <h2>Kontakt os</h2>
-             </div>
+        <div class="kontakt-content-wrapper">
+            <h2>Kontakt os</h2>
             <div class="kontakt__wrapper">
-                    <form id="kontaktForm">
-                
-                    <div class="email__container">
-                         <label for="email">din e-mail:</label>
-                         <input type="email" id="email" placeholder="jegvilværefrivillig@headspace.dk" required>
-                     </div>
+              <form id="kontaktForm">
+
+                <div class="email__container">
+                  <label class="email-label" for="email">din e-mail:</label>
+                  <input type="email" id="email" placeholder="jegvilværefrivillig@headspace.dk" required>
+                </div>
+
                 <div class="radios">
-                    <h2>Hvilket formål kontakter du os med?</h2>
-                    <h2>Vælg fra listen</h2>
+                  <h2>Hvilket formål kontakter du os med?</h2>
+                  <h2>Vælg fra listen</h2>
                 </div>
-                  <div class="checkbox-wrapper">
-                    <label class="checkbox-label"><input type="radio" name="formål" value="ansøgning">
-                        <span class="radio"></span><p>Jeg er klar til at ansøge</p></label>
-                    <label class="checkbox-label"><input type="radio" name="formål" value="hør mere">
-                        <span class="radio"></span><p>Jeg vil gerne høre mere om positionen</p></label>
-                    <label class="checkbox-label"><input type="radio" name="formål" value="anden årsag">
-                        <span class="radio"></span><p>Jeg kontakter jer af en anden årsag</p></label>
-                  </div>
-            </div>
+
+              <div class="checkbox-wrapper">
+                <label class="checkbox-label"><input type="radio" name="formål" value="ansøgning">
+                    <span class="radio"></span>Jeg er klar til at ansøge</label>
+                <label class="checkbox-label"><input type="radio" name="formål" value="hør mere">
+                    <span class="radio"></span>Jeg vil gerne høre mere om positionen</label>
+                <label class="checkbox-label"><input type="radio" name="formål" value="anden årsag">
+                    <span class="radio"></span>Jeg kontakter jer af en anden årsag</label>
+              </div>
+
+        </div>
+            
+            <button type="button" class="positioner-button" id="togglePopup">Vælg én eller flere positioner ▼</button>
+            
+        <div class="kontakt__popup" id="popupMenu">
+    
+              <!-- checkbox indeholder en value, fordi den eller bare ville stå som "on" i consol.log, når der trykkes tilmeld -->
+            <div class="checkbox__grid">
+                <label>
+                  <input type="checkbox" class="valgmulighed" value="Ungerådgiver" checked>
+                  <span class="checkbox"></span>
+                  <p>Ungerådgiver</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="valgmulighed" value="Frivillig i chatten" checked>
+                  <span class="checkbox"></span>
+                  <p>Frivillig i chatten</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="valgmulighed" value="Grupperådgiver" checked>
+                  <span class="checkbox"></span>
+                  <p>Grupperådgiver</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="valgmulighed" value="Formidler" checked>
+                  <span class="checkbox"></span>
+                  <p>Formidler</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="valgmulighed" value="Peer frivillig" checked>
+                  <span class="checkbox"></span>
+                  <p>Peer frivillig</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="valgmulighed" value="Tiktok content creator" checked>
+                  <span class="checkbox"></span>
+                  <p>Tiktok content creator</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="valgmulighed" value="Dialogpilot" checked>
+                  <span class="checkbox"></span>
+                  <p>Dialogpilot</p>
+                </label>
+                <label>
+                  <input type="checkbox" class="valgmulighed" value="Rådgivningsansvarlig" checked>
+                  <span class="checkbox"></span>
+                  <p>Rådgivningsansvarlig</p>
+                </label>
                 
-                <button type="button" class="positioner-button" id="togglePopup"><p>Vælg én eller flere positioner ▼</p></button>
-                
-            <div class="kontakt__popup" id="popupMenu">
-        
-                  <!-- checkbox indeholder en value, fordi den eller bare ville stå som "on" i consol.log, når der trykkes tilmeld -->
-                <div class="checkbox__grid">
-                    <label>
-                      <input type="checkbox" class="valgmulighed" value="Ungerådgiver" checked>
-                      <span class="checkbox"></span>
-                      <p>Ungerådgiver</p>
-                    </label>
-                    <label>
-                      <input type="checkbox" class="valgmulighed" value="Frivillig i chatten" checked>
-                      <span class="checkbox"></span>
-                      <p>Frivillig i chatten</p>
-                    </label>
-                    <label>
-                      <input type="checkbox" class="valgmulighed" value="Grupperådgiver" checked>
-                      <span class="checkbox"></span>
-                      <p>Grupperådgiver</p>
-                    </label>
-                    <label>
-                      <input type="checkbox" class="valgmulighed" value="Formidler" checked>
-                      <span class="checkbox"></span>
-                      <p>Formidler</p>
-                    </label>
-                    <label>
-                      <input type="checkbox" class="valgmulighed" value="Peer frivillig" checked>
-                      <span class="checkbox"></span>
-                      <p>Peer frivillig</p>
-                    </label>
-                    <label>
-                      <input type="checkbox" class="valgmulighed" value="Tiktok content creator" checked>
-                      <span class="checkbox"></span>
-                      <p>Tiktok content creator</p>
-                    </label>
-                    <label>
-                      <input type="checkbox" class="valgmulighed" value="Dialogpilot" checked>
-                      <span class="checkbox"></span>
-                      <p>Dialogpilot</p>
-                    </label>
-                    <label>
-                      <input type="checkbox" class="valgmulighed" value="Rådgivningsansvarlig" checked>
-                      <span class="checkbox"></span>
-                      <p>Rådgivningsansvarlig</p>
-                    </label>
-                    
-                </div>
             </div>
-                <button type="submit" class="cta-button">SEND</button>
+        </div>
+            <button type="submit" class="cta-button">SEND</button>
+
               </form>
             </div>
           </div>

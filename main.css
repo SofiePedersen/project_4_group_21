@@ -538,12 +538,10 @@ header {
 
 /*SECTION 7 - KONTAKTFORMULAR */
 
-.kontakt__tekstbox {
-    margin: 20px;
-}
 .email-container label {
     color: #81b428;
 }
+
 .email__container input[type="email"] {
     background-color: rgba(200, 200, 200, 0.200);
     width: 90%; 
@@ -553,26 +551,13 @@ header {
     border-radius: 20px; 
     font-size: 16px;
 }
+
 .email__container {
-    padding-left: 20px;
     width: 90%;
 }
+
 .email__container input[type="email"]::placeholder {
     font-style: italic;
-}
-.radios {
-    margin: 20px;
-}
-.positioner-button {
-    background-color: rgba(200, 200, 200, 0.200);
-    border: 1px solid lightgray; 
-    border-radius: 20px;
-    padding: 10px;
-    font-size: 16px;
-    width: 90%;
-    margin: auto;
-    display: block;
-    
 }
 
 .checkbox__grid label {
@@ -601,7 +586,7 @@ input[type="radio"], input[type="checkbox"] {
 
 /* Styling af labels generelt */
 /* user select: none, gør at teksten ikke kan markeres */
-.content-wrapper .checkbox-label, label {
+.kontakt-content-wrapper .checkbox-label, label {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -615,10 +600,12 @@ input[type="radio"], input[type="checkbox"] {
     color: #000;
 }
 
-.content-wrapper 
+.email-label {
+    padding-left: 0px;
+}
 
 /* Styling af radio-knapper */
-label .radio {
+.radio {
     position: absolute;
     left: 20;
     width: 20px;
@@ -676,6 +663,21 @@ input[type="checkbox"]:checked + .checkbox::after {
 input[type="checkbox"]:not(:checked):hover + .checkbox,
 input[type="checkbox"]:checked:hover + .checkbox {
     background-color: lightgray;
+}
+
+.positioner-button {
+    background-color: rgba(200, 200, 200, 0.200);
+    border: 1px solid lightgray; 
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    display: block;
+
+    font-family: "Agrandir-narrow";
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
 }
 
 /*SECTION 8 - SOME INFLUENCERS */
@@ -909,7 +911,7 @@ footer a:hover {
     
     .slide-box__image {
         display: flex;
-        flex: 0.5;
+        flex: 0.5; 
         max-width: 50%;
         justify-content: center;
         align-items: center;
