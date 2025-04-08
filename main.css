@@ -574,9 +574,6 @@ header {
 
 /*SECTION 7 - KONTAKTFORMULAR */
 
-.email-container label {
-    color: #81b428;
-}
 
 .email__container input[type="email"] {
     background-color: rgba(200, 200, 200, 0.200);
@@ -586,10 +583,6 @@ header {
     border: 1px solid lightgray; 
     border-radius: 20px; 
     font-size: 16px;
-}
-
-.email__container {
-    width: 90%;
 }
 
 .email__container input[type="email"]::placeholder {
@@ -631,6 +624,7 @@ input[type="radio"], input[type="checkbox"] {
     user-select: none;
 
     font-family: "Agrandir-narrow";
+    font-style: italic;
     font-size: 16px;
     line-height: 24px;
     color: #000;
@@ -638,7 +632,9 @@ input[type="radio"], input[type="checkbox"] {
 
 .email-label {
     padding-left: 0px;
+    font-style: normal;
 }
+
 
 /* Styling af radio-knapper */
 .radio {
@@ -707,8 +703,6 @@ input[type="checkbox"]:checked:hover + .checkbox {
     border-radius: 20px;
     padding: 10px;
     width: 90%;
-    margin: auto;
-    display: block;
 
     font-family: "Agrandir-narrow";
     font-size: 16px;
