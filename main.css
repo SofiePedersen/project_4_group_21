@@ -1162,6 +1162,11 @@ footer a:hover {
 
     /*SECTION 6 - INFO */
     /*SECTION 7 - KONTAKTFORMULAR */
+    .checkbox__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
     /*SECTION 8 - SOME INFLUENCERS */
     /*FOOTER*/
     footer {
