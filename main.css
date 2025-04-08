@@ -436,7 +436,6 @@ header {
 }
 
 .section-3__img__container {
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -530,6 +529,9 @@ header {
 }
 
 /*SECTION 5 - Q&A*/
+
+.section-5 {}
+
 /*SECTION 6 - INFO */
 .section-6 {
     display: flex;
@@ -1152,6 +1154,8 @@ footer a:hover {
         opacity: 1 !important;
     }
     /*SECTION 5 - Q&A*/
+
+
     /*SECTION 6 - INFO */
     /*SECTION 7 - KONTAKTFORMULAR */
     /*SECTION 8 - SOME INFLUENCERS */
