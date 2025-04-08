@@ -574,6 +574,9 @@ header {
 
 /*SECTION 7 - KONTAKTFORMULAR */
 
+.kontakt-content-wrapper h2 {
+    font-size: 30;
+}
 
 .email__container input[type="email"] {
     background-color: rgba(200, 200, 200, 0.200);
