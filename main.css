@@ -104,7 +104,8 @@ p, a {
 
 header {
     background-color: #fff;
-    padding: 1rem;
+    padding: 2rem;
+    width: 100vw;
 }
 
 .header-wrapper {
@@ -155,20 +156,21 @@ header {
     background-color: #27ae60;
 }
 
-#logo-small-header {
-    width: 132px;
+#headspace-logo {
+    width: 40%;
 }
 
 .small-header {
     background-color: #fff;
     display: none;
+    padding: 1rem;
+    width: 100vw;
 }
 
 .small-header--top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px; 
     font-size: 10px;
 }
 
@@ -267,73 +269,83 @@ header {
 }
 
 /* HERO */
+
 .hero-image {
-    padding: 36px;
-    width: 100%;
-    height: 600px;
+    padding: 2rem;
+    width: 100vw;
+    height: 650px;
+
     background-image: url(images/headpsaceskilt.webp);
     background-color: #81b428;
-    align-items: center;
+
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
 }
 
-.hero-image__textbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .hero-image__title {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 0.5rem;
     font-family: 'Agrandir-regular';
     color: #fff;
 }
+
 .hero-image__text {
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: #fff;
 }
+
 /*SECTION 1 - VIDEO MED JAKOB */
+
 .section-1 {
     display: flex;
     flex-direction: column;
-    padding: 36px;
-    background-color: #fff;
     align-items: center;
     justify-content: center;
-    width: 100%;
+
+    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+    width: 100vw;
+    margin-bottom: 2rem;
 }
+
 .section-1__text {
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
-.section-1__text h2 {
-    margin-bottom: 0px;
+.section-1__text__heading {
+    margin-bottom: 1.5rem;
 }
 
 .section-1__video {
+    width: 100vw;
+    padding: 2rem;
     display: flex;
-    width: 100%;
-    height: auto;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.section-1__video img {
-    width: 70%;
+.section-1__video video {
+    width: 100%;
+    height: 100%;;
 }
+
 /*SECTION 2 - QUIZ */
+
+.section-2 {
+    width: 100vw;
+    height: 800px;
+    background-color: red;
+}
+
 .quiz-wrapper {
     display: flex;
     justify-content: center;
@@ -398,37 +410,45 @@ header {
 }
 
 /*SECTION 3 - INFO */
+
 .section-3 {
     display: flex;
     flex-direction: column;
-    padding: 36px;
-    background-color: #fff;
     align-items: center;
     justify-content: center;
+
+    padding: 4rem 2rem;
     width: 100%;
+    
+    background-color: #fff;
 }
+
 .section-3__text {
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .section-3__text h2 {
-    margin-bottom: 0px;
+    margin-bottom: 1.5rem;
 }
 
-.section-img__container {
+.section-3__img__container {
+    background-color: aqua;
     display: flex;
-    width: 100%;
-    height: auto;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 280px;
 }
 
-.section-img__container img {
-    width: 70%;
+.section-3__img__container img {
+    width: 100%;
+    height: 100%;
 }
+
 /*SECTION 4 - SLIDESHOW */
 .section-4 {
     background-color: #CCBDDD;
@@ -874,8 +894,48 @@ footer a:hover {
     }
     
     /*HEADER*/
+
+    .small-header
+
+    .burgermenu-icon {
+        width: 35px;
+    }
+
+    #headspace-logo {
+        width: 30%;
+    }
+
+    .small-header--top .cta-button {
+        margin-right: -10rem;
+    }
+
     /*HERO*/
     /*SECTION 1 - VIDEO MED JAKOB */
+
+    .section-1 {
+        flex-direction: row-reverse;
+        align-items: center;
+    
+        padding: 3.3rem;
+        padding-top: 4rem;
+        padding-bottom: 0rem;
+        margin-bottom: 4rem;
+    }
+    
+    .section-1__text {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2rem;
+    }
+    
+    .section-1__video {
+        padding: 0;
+    }
+    
+    .section-1__video video {
+        width: 100%;
+    }
+
     /*SECTION 2 - QUIZ */
     /*SECTION 3 - INFO */
     /*SECTION 4 - SLIDESHOW */
@@ -998,8 +1058,41 @@ footer a:hover {
 
 @media only screen and (min-width: 1240px) {
     /*HEADER*/
+
+    .header-logo-image {
+        width: 15%;
+    }
+
     /*HERO*/
+
     /*SECTION 1 - VIDEO MED JAKOB */
+    
+    .section-1 {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    .section-1__text {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2rem;
+        width: 50vw;
+    }
+ 
+    .section-1__text__paragraph {
+        width: 75%;
+    }
+    
+    .section-1__video {
+        padding: 0;
+        width: 40vw;
+    }
+    
+    .section-1__video video {
+        width: 60%
+    }
+
     /*SECTION 2 - QUIZ */
     /*SECTION 3 - INFO */
     /*SECTION 4 - SLIDESHOW */
@@ -1074,6 +1167,8 @@ footer a:hover {
     }
 }
 
+/* NEDSTÅENDE BRUGES KUN TIL HEADER */
+
 @media screen and (max-width: 1375px) {
 
     .header__nav--sub-category ul li a {
@@ -1100,7 +1195,6 @@ footer a:hover {
     /*FOOTER*/
 }
 
-/** Går fra stor header til lille header **/
 @media screen and (max-width: 1020px) {
     header {
         display: none;
