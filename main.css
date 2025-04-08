@@ -530,9 +530,16 @@ header {
 
 /*SECTION 5 - Q&A*/
 
-.section-5 {}
+.section-5 {
+    padding: 4rem 2rem;
+}
+
+.qna-wrapper {
+    display: flex;
+}
 
 /*SECTION 6 - INFO */
+
 .section-6 {
     display: flex;
     flex-direction: column;
