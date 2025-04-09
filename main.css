@@ -1251,6 +1251,8 @@ footer a:hover {
     /*SECTION 1 - VIDEO MED JAKOB */
     
     .section-1 {
+        padding: 8rem;
+        padding-bottom: 4rem;
         flex-direction: row-reverse;
         align-items: center;
     }
@@ -1278,6 +1280,11 @@ footer a:hover {
 
     /*SECTION 2 - QUIZ */
     /*SECTION 3 - INFO */
+
+    .section-3 {
+        padding: 8rem;
+    }
+
     /*SECTION 4 - SLIDESHOW */
     .section-4 {
         max-height: 500px;
@@ -1303,6 +1310,10 @@ footer a:hover {
         opacity: 1 !important;
     }
 
+    /* .slide-box__text {
+        margin: 8rem;
+    } */
+
     /*SECTION 5 - Q&A*/
 
     .section-5 {
@@ -1310,7 +1321,7 @@ footer a:hover {
     }
 
     .qna-heading {
-        margin-top: 8.5rem;
+        margin-top: 5rem;
         margin-bottom: 3rem;
     }
 
@@ -1346,7 +1357,7 @@ footer a:hover {
     footer {
         display: flex;
         flex-wrap: wrap;
-        padding: 2.5rem;
+        padding: 3rem 8rem;
     }
 
     .footer-wrapper {
