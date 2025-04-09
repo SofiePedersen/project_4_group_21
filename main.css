@@ -1194,6 +1194,10 @@ footer a:hover {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
       }
+
+      .radios h2 {
+        font-size: 28;
+    }
     /*SECTION 8 - SOME INFLUENCERS */
     /*FOOTER*/
     .footer-wrapper__list-socials__raadgivning-image {
