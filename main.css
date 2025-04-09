@@ -105,7 +105,7 @@ p, a {
 header {
     background-color: #fff;
     padding: 2rem;
-    width: 100vw;
+    width: 100%;
 }
 
 .header-wrapper {
@@ -164,7 +164,7 @@ header {
     background-color: #fff;
     display: none;
     padding: 1rem;
-    width: 100vw;
+    width: 100%;
 }
 
 .small-header--top {
@@ -190,7 +190,7 @@ header {
 
 .open-burger-menu {
     background-color: white;
-    max-width: 100vw;
+    max-width: 100%;
     max-height: 100vh;
     border-right: 1px solid #d0d1d3;
     top: 0px;
@@ -272,7 +272,7 @@ header {
 
 .hero-image {
     padding: 2rem;
-    width: 100vw;
+    width: 100%;
     height: 650px;
 
     background-image: url(images/headpsaceskilt.webp);
@@ -309,7 +309,7 @@ header {
     padding: 2rem;
     padding-top: 4rem;
     padding-bottom: 0rem;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 2rem;
 }
 
@@ -326,7 +326,7 @@ header {
 }
 
 .section-1__video {
-    width: 100vw;
+    width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -341,7 +341,7 @@ header {
 /*SECTION 2 - QUIZ */
 
 .section-2 {
-    width: 100vw;
+    width: 100%;
     height: 800px;
     background-color: red;
 }
@@ -418,7 +418,7 @@ header {
     justify-content: center;
 
     padding: 4rem 2rem;
-    width: 100vw;
+    width: 100%;
     
     background-color: #fff;
 }
@@ -451,7 +451,7 @@ header {
 /*SECTION 4 - SLIDESHOW */
 
 .section-4 {
-    width: 100vw;
+    width: 100%;
     background-color: #CCBDDD;
     height: 800px;
     display: flex;
@@ -533,7 +533,7 @@ header {
 /* SECTION 5 - Q&A*/
 
 .section-5 {
-    width: 100vw;
+    width: 100%;
     padding: 4rem 2rem;
 }
 
@@ -605,7 +605,7 @@ header {
     align-items: center;
 
     padding: 4rem 2rem;
-    width: 100vw;
+    width: 100%;
     
     background-color: #F7CE5B;
 }
@@ -636,7 +636,7 @@ header {
 
 /* SECTION 7 - KONTAKTFORMULAR */
 .section-7 {
-    width: 100vw;
+    width: 100%;
     height: 800px;
     background-color: red;
 }
@@ -782,7 +782,7 @@ input[type="checkbox"]:checked:hover + .checkbox {
 /*SECTION 8 - SOME INFLUENCERS */
 .section-8 {
     background-color: #CCBDDD;
-    width: 100vw;
+    width: 100%;
     padding: 36px;
 }
 .some-box {
@@ -829,10 +829,11 @@ input[type="checkbox"]:checked:hover + .checkbox {
     display: flex;
     flex-direction: row;
 }
+
 /*FOOTER*/
 footer {
     background-color: #81b428;
-    width: 100vw;
+    width: 100%;
     padding: 2rem;
 }
 
