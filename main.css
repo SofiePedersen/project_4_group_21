@@ -641,8 +641,8 @@ header {
     background-color: red;
 }
 
-.kontakt-content-wrapper h2 {
-    font-size: 30;
+.kontakt-content-wrapper {
+    padding: 60px;
 }
 
 .email__container input[type="email"] {
