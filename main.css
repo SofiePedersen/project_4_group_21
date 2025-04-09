@@ -160,6 +160,39 @@ header {
     width: 40%;
 }
 
+.desktop-submenu {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 200px;
+  }
+  
+  .desktop-dropdown.open .desktop-submenu {
+    display: block !important;
+    visibility: visible;
+  opacity: 1;
+}
+  
+  
+  
+  .header-wrapper__navigation ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .header-wrapper__navigation li {
+    position: relative;
+  }
+  
+
 .small-header {
     background-color: #fff;
     display: none;
