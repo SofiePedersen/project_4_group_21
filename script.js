@@ -101,6 +101,7 @@ function highlightThumbnail (n) {
 
     columns[n - 1].classList.add('active');
 }
+
 // SECTION 5 - QNA//
 const qnaBtn1 = document.getElementById('qna-btn-1');
 const qnaBtn2 = document.getElementById('qna-btn-2');
