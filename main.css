@@ -49,7 +49,7 @@ h2 {
 
 h3 {
     font-family: "Agrandir-regular";
-    font-size: 24px;
+    font-size: 20px;
     line-height: 24px;
     color: #000;
 }
@@ -528,17 +528,60 @@ header {
     display: none;
 }
 
-/*SECTION 5 - Q&A*/
+/* SECTION 5 - Q&A*/
 
 .section-5 {
     padding: 4rem 2rem;
 }
 
-.qna-wrapper {
-    display: flex;
+.qna-heading {
+    margin-bottom: 2rem;
 }
 
-/*SECTION 6 - INFO */
+.qna-question-box__title {
+    font-weight: 100;
+    font-size: 19px;
+    margin-top: 4px;
+}
+
+.qna-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.qna-question-box {
+    border-bottom: 1px solid #000;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.qna-question-box__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#qna-question-box__wrapper-text--1,
+#qna-question-box__wrapper-text--2,
+#qna-question-box__wrapper-text--3,
+#qna-question-box__wrapper-text--4,
+#qna-question-box__wrapper-text--5 {
+    margin-top: 2rem;
+    display: none;
+}
+
+#qna-btn-1,
+#qna-btn-2,
+#qna-btn-3,
+#qna-btn-4,
+#qna-btn-5 {
+    background-color: #81b428;
+    width: 8%;
+    padding: 3px;
+    margin-right: 1rem;
+}
+
+/* SECTION 6 - INFO */
 
 .section-6 {
     display: flex;
@@ -572,7 +615,7 @@ header {
     width: 70%;
 }
 
-/*SECTION 7 - KONTAKTFORMULAR */
+/* SECTION 7 - KONTAKTFORMULAR */
 
 .kontakt-content-wrapper h2 {
     font-size: 30;

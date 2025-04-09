@@ -101,4 +101,74 @@ function highlightThumbnail (n) {
 
     columns[n - 1].classList.add('active');
 }
+// SECTION 5 - QNA//
+const qnaBtn1 = document.getElementById('qna-btn-1');
+const qnaBtn2 = document.getElementById('qna-btn-2');
+const qnaBtn3 = document.getElementById('qna-btn-3');
+const qnaBtn4 = document.getElementById('qna-btn-4');
+const qnaBtn5 = document.getElementById('qna-btn-5');
+
+const qnaParagraphText1 = document.getElementById('qna-question-box__wrapper-text--1');
+const qnaParagraphText2 = document.getElementById('qna-question-box__wrapper-text--2');
+const qnaParagraphText3 = document.getElementById('qna-question-box__wrapper-text--3');
+const qnaParagraphText4 = document.getElementById('qna-question-box__wrapper-text--4');
+const qnaParagraphText5 = document.getElementById('qna-question-box__wrapper-text--5');
+
+qnaBtn1.addEventListener('click', switchDisplay1);
+qnaBtn2.addEventListener('click', switchDisplay2);
+qnaBtn3.addEventListener('click', switchDisplay3);
+qnaBtn4.addEventListener('click', switchDisplay4);
+qnaBtn5.addEventListener('click', switchDisplay5);
+
+
+function switchDisplay1 (){
+    if (qnaParagraphText1.style.display === "none") {
+        qnaParagraphText1.style.display = "block";
+    }
+
+    else {
+        qnaParagraphText1.style.display = "none";
+    }
+}
+
+function switchDisplay2 (){
+    if (qnaParagraphText2.style.display === "none") {
+        qnaParagraphText2.style.display = "block";
+    }
+
+    else {
+        qnaParagraphText2.style.display = "none";
+    }
+}
+
+function switchDisplay3 (){
+    if (qnaParagraphText3.style.display === "none") {
+        qnaParagraphText3.style.display = "block";
+    }
+
+    else {
+        qnaParagraphText3.style.display = "none";
+    }
+}
+
+function switchDisplay4 (){
+    if (qnaParagraphText4.style.display === "none") {
+        qnaParagraphText4.style.display = "block";
+    }
+
+    else {
+        qnaParagraphText4.style.display = "none";
+    }
+}
+
+function switchDisplay5 (){
+    if (qnaParagraphText5.style.display === "none") {
+        qnaParagraphText5.style.display = "block";
+    }
+
+    else {
+        qnaParagraphText5.style.display = "none";
+    }
+}
+
 //SECTION 7 - KONTAKTFORMULAR//
