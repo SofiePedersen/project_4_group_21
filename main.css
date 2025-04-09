@@ -586,33 +586,37 @@ header {
 .section-6 {
     display: flex;
     flex-direction: column;
-    padding: 36px;
-    background-color: #F7CE5B;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
+    padding: 4rem 2rem;
     width: 100%;
+    
+    background-color: #F7CE5B;
 }
-.section-6__text {
+
+.section-6-wrapper {
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
-.section-6__text h2 {
-    margin-bottom: 0px;
+.section-6-wrapper__heading {
+    margin-bottom: 1.5rem;
 }
 
 .section-img__container {
     display: flex;
-    width: 100%;
-    height: auto;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 280px;
 }
 
 .section-img__container img {
-    width: 70%;
+    width: 100%;
 }
 
 /* SECTION 7 - KONTAKTFORMULAR */
