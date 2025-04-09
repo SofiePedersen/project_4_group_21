@@ -663,6 +663,15 @@ header {
     margin-bottom: 40px;
 }
 
+.radios {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.radios h2 {
+    font-size: 17;
+}
+
 /*styling af popup*/
 .kontakt__popup {
     background-color: white;
