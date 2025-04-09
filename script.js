@@ -120,54 +120,63 @@ qnaBtn3.addEventListener('click', switchDisplay3);
 qnaBtn4.addEventListener('click', switchDisplay4);
 qnaBtn5.addEventListener('click', switchDisplay5);
 
-
 function switchDisplay1 (){
     if (qnaParagraphText1.style.display === "none") {
         qnaParagraphText1.style.display = "block";
+        qnaBtn1.src = "images/Minus.png";
     }
 
     else {
         qnaParagraphText1.style.display = "none";
+        qnaBtn1.src = "images/Plus.png";
     }
 }
 
 function switchDisplay2 (){
     if (qnaParagraphText2.style.display === "none") {
         qnaParagraphText2.style.display = "block";
+        qnaBtn2.src = "images/Minus.png";
     }
 
     else {
         qnaParagraphText2.style.display = "none";
+        qnaBtn2.src = "images/Plus.png";
     }
 }
 
 function switchDisplay3 (){
     if (qnaParagraphText3.style.display === "none") {
         qnaParagraphText3.style.display = "block";
+        qnaBtn3.src = "images/Minus.png";
     }
 
     else {
         qnaParagraphText3.style.display = "none";
+        qnaBtn3.src = "images/Plus.png";
     }
 }
 
 function switchDisplay4 (){
     if (qnaParagraphText4.style.display === "none") {
         qnaParagraphText4.style.display = "block";
+        qnaBtn4.src = "images/Minus.png";
     }
 
     else {
         qnaParagraphText4.style.display = "none";
+        qnaBtn4.src = "images/Plus.png";
     }
 }
 
 function switchDisplay5 (){
     if (qnaParagraphText5.style.display === "none") {
         qnaParagraphText5.style.display = "block";
+        qnaBtn5.src = "images/Minus.png";
     }
 
     else {
         qnaParagraphText5.style.display = "none";
+        qnaBtn5.src = "images/Plus.png";
     }
 }
 

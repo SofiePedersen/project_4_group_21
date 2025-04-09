@@ -418,7 +418,7 @@ header {
     justify-content: center;
 
     padding: 4rem 2rem;
-    width: 100%;
+    width: 100vw;
     
     background-color: #fff;
 }
@@ -449,7 +449,9 @@ header {
 }
 
 /*SECTION 4 - SLIDESHOW */
+
 .section-4 {
+    width: 100vw;
     background-color: #CCBDDD;
     height: 800px;
     display: flex;
@@ -531,6 +533,7 @@ header {
 /* SECTION 5 - Q&A*/
 
 .section-5 {
+    width: 100vw;
     padding: 4rem 2rem;
 }
 
@@ -553,7 +556,10 @@ header {
     border-bottom: 1px solid #000;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+}
 
+.qna-question-box:last-child {
+    margin-bottom: 0rem;
 }
 
 .qna-question-box__wrapper {
@@ -576,10 +582,19 @@ header {
 #qna-btn-4,
 #qna-btn-5 {
     background-color: #81b428;
-    width: 8%;
+    width: 50px;
     padding: 3px;
     margin-right: 1rem;
 }
+
+#qna-btn-1:hover,
+#qna-btn-2:hover,
+#qna-btn-3:hover,
+#qna-btn-4:hover,
+#qna-btn-5:hover {
+    background-color: #648D1C;
+}
+
 
 /* SECTION 6 - INFO */
 
@@ -590,7 +605,7 @@ header {
     align-items: center;
 
     padding: 4rem 2rem;
-    width: 100%;
+    width: 100vw;
     
     background-color: #F7CE5B;
 }
@@ -620,6 +635,11 @@ header {
 }
 
 /* SECTION 7 - KONTAKTFORMULAR */
+.section-7 {
+    width: 100vw;
+    height: 800px;
+    background-color: red;
+}
 
 .kontakt-content-wrapper h2 {
     font-size: 30;
@@ -762,7 +782,7 @@ input[type="checkbox"]:checked:hover + .checkbox {
 /*SECTION 8 - SOME INFLUENCERS */
 .section-8 {
     background-color: #CCBDDD;
-    width: 100%;
+    width: 100vw;
     padding: 36px;
 }
 .some-box {
@@ -977,7 +997,7 @@ footer a:hover {
     .section-1__text {
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
+        margin-left: 2rem;
     }
     
     .section-1__video {
@@ -994,10 +1014,7 @@ footer a:hover {
 
     .section-3 {
         flex-direction: row-reverse;
-    
         padding: 4rem 2rem;
-        width: 100%;
-        
         background-color: #fff;
     }
     
@@ -1012,7 +1029,6 @@ footer a:hover {
     }
     
     .section-3__img__container {
-        background-color: aqua;
         width: 50%;
         height: 500px;
     }
@@ -1023,6 +1039,7 @@ footer a:hover {
     }
 
     /*SECTION 4 - SLIDESHOW */
+
     .section-4 {
         height: 600px;
         display: flex;
@@ -1118,8 +1135,49 @@ footer a:hover {
     .slide-box__column:hover .demo {
         opacity: 1 !important;
     }
+
     /*SECTION 5 - Q&A*/
+
+    .qna-heading {
+        margin-top: 60px;
+    }
+
     /*SECTION 6 - INFO */
+
+    .section-6 {
+        flex-direction: row-reverse;
+        align-items:flex-start ;
+        padding: 4rem 2rem;
+    }
+
+    .section-6-wrapper {
+        margin-left: 2rem;
+        width: 50%;
+    }
+    
+    .section-img__container {
+        width: 50%;
+        height: 500px;
+    }
+    
+    .section-img__container img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #qna-btn-1,
+    #qna-btn-2,
+    #qna-btn-3,
+    #qna-btn-4,
+    #qna-btn-5 {
+        width: 40px;
+    }
+
+    .qna-wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     /*SECTION 7 - KONTAKTFORMULAR */
     /*SECTION 8 - SOME INFLUENCERS */
     /*FOOTER*/
@@ -1203,10 +1261,39 @@ footer a:hover {
     .slide-box__column:hover .demo {
         opacity: 1 !important;
     }
+
     /*SECTION 5 - Q&A*/
 
+    .section-5 {
+        padding: 8rem;
+    }
+
+    .qna-heading {
+        margin-top: 8.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .qna-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #qna-btn-1,
+    #qna-btn-2,
+    #qna-btn-3,
+    #qna-btn-4,
+    #qna-btn-5 {
+        width: 50px;
+    }
 
     /*SECTION 6 - INFO */
+
+    .section-6 {
+        justify-content: center;
+        align-items: center;
+        padding: 8rem;
+    }
+
     /*SECTION 7 - KONTAKTFORMULAR */
     .checkbox__grid {
         display: grid;
