@@ -191,7 +191,7 @@ header {
 .open-burger-menu {
     background-color: white;
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 200vh;
     border-right: 1px solid #d0d1d3;
     top: 0px;
     left: 0;
@@ -231,8 +231,11 @@ header {
 
 .headerlink {
     color: rgb(0, 0, 0);
-    font-family: 'Agrandir-TextBold';
+    font-family: 'Agrandir';
     text-decoration: none;
+    font-weight: 300;
+    font-size: 22px;
+    color: #4c4e54;
 }
 
 .has-dropdown .dropdown {
@@ -247,26 +250,11 @@ header {
 }
 
 .burger-menu-bottom {
-    background-color: #d0d1d3;
-    padding-top: 20px;
-}
-
-.language-btns {
     background-color: white;
-    padding: 12.5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #d0d1d3;
-    padding-left: 20px;
-
+    padding-top: 10px;
 }
 
-.da-btn, .en-btn {
-    background-color: white;
-    border: none;
-    font-size: 14px;
-}
+
 
 /* HERO */
 
