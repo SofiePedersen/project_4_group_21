@@ -1180,6 +1180,11 @@ footer a:hover {
     }
 
     /*SECTION 7 - KONTAKTFORMULAR */
+    .checkbox__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
     /*SECTION 8 - SOME INFLUENCERS */
     /*FOOTER*/
     .footer-wrapper__list-socials__raadgivning-image {
