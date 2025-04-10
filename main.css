@@ -813,21 +813,35 @@ input[type="checkbox"]:checked:hover + .checkbox {
     width: 100%;
     padding: 36px;
 }
+
+.section-8 h2 {
+    margin-bottom: 20px;
+}
 .some-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 24px;
+}
+.some-box-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 .some-box__influencer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 .some-box__influencer--img {
     display: flex;
-    width: 40%;
+    width: 30%;
+    max-width: 30%;
     height: auto;
 }
 
@@ -840,12 +854,13 @@ input[type="checkbox"]:checked:hover + .checkbox {
 .some-box__influencer--text {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
 }
 
 .some-box__influencer--text p {
     margin-top: 0;
     font-family: "Agrandir-ThinItalic";
+    font-size: 14px;
 }
 
 .some-box__influencer--text h2 {
@@ -856,6 +871,15 @@ input[type="checkbox"]:checked:hover + .checkbox {
 .some-box__influencer--icons {
     display: flex;
     flex-direction: row;
+    gap: 15px;
+}
+
+.some-box__influencer--icons a {
+    background-color: #9B8BBB;
+    border-radius: 50%;
+    padding: 8px 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 /*FOOTER*/
@@ -1218,6 +1242,10 @@ footer a:hover {
         font-size: 28;
     }
     /*SECTION 8 - SOME INFLUENCERS */
+    .some-box {
+        flex-direction: row;
+        box-sizing: border-box;
+    }
     /*FOOTER*/
     .footer-wrapper__list-socials__raadgivning-image {
         width: 20%;
