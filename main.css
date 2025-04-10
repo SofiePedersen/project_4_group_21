@@ -1243,9 +1243,11 @@ footer a:hover {
         font-size: 28;
     }
     /*SECTION 8 - SOME INFLUENCERS */
+    .section-8 {
+    }
+    
     .some-box {
         flex-direction: row;
-        box-sizing: border-box;
     }
     /*FOOTER*/
     .footer-wrapper__list-socials__raadgivning-image {
