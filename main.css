@@ -175,24 +175,21 @@ header {
     min-width: 200px;
   }
   
-  .desktop-dropdown.open .desktop-submenu {
+.desktop-dropdown.open .desktop-submenu {
     display: block !important;
     visibility: visible;
   opacity: 1;
 }
   
-  
-  
-  .header-wrapper__navigation ul {
+.header-wrapper__navigation ul {
     display: flex;
     gap: 2rem;
-  }
+}
   
-  .header-wrapper__navigation li {
+.header-wrapper__navigation li {
     position: relative;
-  }
+}
   
-
 .small-header {
     background-color: #fff;
     display: none;
@@ -286,8 +283,6 @@ header {
     background-color: white;
     padding-top: 10px;
 }
-
-
 
 /* HERO */
 
@@ -705,7 +700,7 @@ header {
 /*  Buttons i kontaktformular styles herunder */
 
 /* Skjuler standard layout på radio- og checkbox-knapper */
-input[type="radio"], input[type="checkbox"] {
+.checkbox-radio, .checkbox__grid-check {
     display: none;
 }
 
