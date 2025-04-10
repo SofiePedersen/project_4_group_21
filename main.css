@@ -358,7 +358,7 @@ header {
 
 .section-2 {
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background-color: red;
 }
 
@@ -373,14 +373,20 @@ header {
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: 0% 94%;
-    background-color: red;
 }
 
-.quiz-title, .quiz-card-title {
+.quiz-title {
     font-family: 'Agrandir-WideBlackItalic';
     color: #81b428;
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+.quiz-card-title {
+    font-family: 'Agrandir-WideBlackItalic';
+    color: #81b428;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .quiz-text {
@@ -388,17 +394,14 @@ header {
 }
 
 .quiz-card {
-    background-color: coral;
-    display: none;
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 0.5rem;
     padding-top: 2rem;
-    height: 510px;
-
-    background-color: red;
+    height: 100vh;
+    display: none;
+    background-color: coral;
 }
 
 .quiz-card-wrapper {
@@ -417,13 +420,24 @@ header {
 .quiz-card-options {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     gap: 1.5rem;
 }
 
 .quiz-card-options div {
     display: flex;
     flex-direction: row;
+}
+
+.quiz-card-options div input {
+    margin-right: 1rem;
+}
+
+.quiz-card-options div label {
+    font-family: "Agrandir-narrow";
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
 }
 
 .quiz-bottom-dot-wrapper {
@@ -440,6 +454,65 @@ header {
     border-radius: 100px;
     background-color: lightgray;
 }
+
+#quiz-end-card {
+    padding: 2.5rem;
+    padding-top: 3.7rem;
+    height: 100vh;
+}
+
+.quiz-end-text {
+    margin-bottom: 1rem;
+}
+
+.quiz-end-text--2 {
+    margin-bottom: 1rem;
+}
+
+.quiz-end-ul {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-family: "Agrandir-narrow";
+    font-size: 20px;
+    color: #000;
+}
+
+.quiz-end-form {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.quiz-end-form-submit {
+    width: 75px;
+    height: 35px;
+    border-radius: 400px;
+    border: none;
+    background-color: #81b428;
+    font-family: "Agrandir-regular";
+    font-size: 12px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.quiz-end-form-email {
+    width: 70%;
+    padding: 0.5rem 1.2rem;
+    height: 35px;
+    border-radius: 400px;
+    border: none;
+    margin-right: 1rem;
+    background-color: #f3f0f0;
+}
+
+.quiz-end-form-email::placeholder {
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+
 
 /*SECTION 3 - INFO */
 
