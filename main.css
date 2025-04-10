@@ -712,7 +712,7 @@ header {
 
 /* Styling af labels generelt */
 /* user select: none, gør at teksten ikke kan markeres */
-.kontakt-content-wrapper .checkbox-label, label {
+.kontakt-content-wrapper .checkbox-label, .checkbox__grid-label {
     display: flex;
     align-items: center;
     cursor: pointer;
