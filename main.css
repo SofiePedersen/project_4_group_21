@@ -367,16 +367,16 @@ header {
     justify-content: center;
     align-items: flex-start;
     padding: 2.5rem;
-    padding-top: 5rem;
+    padding-top: 3.7rem;
     height: 100vh;
     background-image: url('images/Hoptimist.png');
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 0% 78%;
+    background-size: 45%;
+    background-position: 0% 94%;
     background-color: red;
 }
 
-.quiz-title {
+.quiz-title, .quiz-card-title {
     font-family: 'Agrandir-WideBlackItalic';
     color: #81b428;
     font-size: 2rem;
@@ -384,13 +384,21 @@ header {
 }
 
 .quiz-text {
-    font-size: 1.3rem;
     margin-bottom: 2rem;
 }
 
 .quiz-card {
     background-color: coral;
     display: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    height: 510px;
+
+    background-color: red;
 }
 
 .quiz-card-wrapper {
@@ -400,6 +408,10 @@ header {
 .quiz-card-bottom-wrapper{
     display: flex;
     justify-content: space-between;
+}
+
+.quiz-card-question {
+    margin-bottom: 1.5rem;
 }
 
 .quiz-card-options {
@@ -417,13 +429,14 @@ header {
 .quiz-bottom-dot-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
 }
 
 .quiz-bottom-dot {
     display: block;
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
     border-radius: 100px;
     background-color: lightgray;
 }
