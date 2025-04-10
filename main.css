@@ -373,6 +373,7 @@ header {
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 0% 78%;
+    background-color: red;
 }
 
 .quiz-title {
