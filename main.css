@@ -287,7 +287,9 @@ header {
     width: 100%;
     height: 650px;
 
-    background-image: url(images/headspace_bold.jpg);
+    background-image: url(images/headspace_bold.webp);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #81b428;
 
     display: flex;
@@ -685,6 +687,7 @@ header {
     width: 50px;
     padding: 3px;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 #qna-btn-1:hover,
@@ -979,7 +982,9 @@ footer {
 
 .footer-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul {
@@ -990,7 +995,7 @@ footer li {
     list-style-type: none;
 }
 
-Footer h4 {
+footer h4 {
     font-family: 'Agrandir-TextBold';
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -1009,11 +1014,16 @@ footer a:hover {
     color: white;
 }
 
-.footer-wrapper__info-cards {
-    width: 43vw;
-    margin-bottom: 1rem;
+.footer-wrapper__info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.footer-wrapper__info-cards {
+    width: 48%;
+    margin-bottom: 1rem;
+}
 
 .footer-wrapper__info-cards h4 {
     margin-bottom: 1.2rem;
@@ -1342,11 +1352,20 @@ footer a:hover {
     }
 
     /*FOOTER*/
+    .footer-wrapper__info-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .footer-wrapper__info-cards {
+        width: 22%;
+    }
+    
     .footer-wrapper__list-socials__raadgivning-image {
         width: 20%;
     }
 
-    Footer h4 {
+    footer h4 {
         font-family: 'Agrandir-TextBold';
         font-size: 18px;
         letter-spacing: 0.5px;
@@ -1472,7 +1491,7 @@ footer a:hover {
     /*FOOTER*/
     footer {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         padding: 3rem 8rem;
     }
 
@@ -1482,7 +1501,6 @@ footer a:hover {
     }
 
     .footer-wrapper__info-cards {
-        width: 12vw;
         margin-bottom: 1rem;
     }
 
