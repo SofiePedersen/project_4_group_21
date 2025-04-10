@@ -365,8 +365,9 @@ header {
 .quiz-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 2.5rem;
+    padding-top: 5rem;
     height: 100vh;
     background-image: url('images/Hoptimist.png');
     background-repeat: no-repeat;
@@ -384,10 +385,6 @@ header {
 .quiz-text {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-}
-
-.textfield {
-    margin-top: -20rem;
 }
 
 .quiz-card {
@@ -409,6 +406,11 @@ header {
     flex-direction: column;
     margin-bottom: 5rem;
     gap: 1.5rem;
+}
+
+.quiz-card-options div {
+    display: flex;
+    flex-direction: row;
 }
 
 .quiz-bottom-dot-wrapper {

@@ -136,6 +136,7 @@ function showOptions(){
     const createQuizLabel = document.createElement("label");
     createQuizLabel.for = "questions-" + i;
     createQuizLabel.innerHTML = quizData[currentQuestion].answers[i];
+    createQuizLabel.class = ""
     createQuizDivWrapper.appendChild(createQuizLabel);
     };
 };
