@@ -1,4 +1,3 @@
-
 /** Jeg laver et array af Data,
  * som jeg vil bruge til at ændre indholdet på de forskellige quiz-sider */
 
@@ -61,12 +60,17 @@ const quizData = [
 ];
 
 /* ELEMENTS */
-const startQuizBtn = document.getElementById('startQuiz');
 const quizIntroCard = document.getElementById('quiz-wrapper');
 const quizQuestionCard = document.getElementById('quiz-question-card');
-const quizQuestionTitle = document.getElementById('quiz-question');
+const quizEndCard = document.getElementById('quiz-end-card');
+
+const startQuizBtn = document.getElementById('startQuiz');
 const nextQuestionBtn = document.getElementById('quiz-forward-btn');
 const prevQuestionBtn = document.getElementById('quiz-back-btn')
+const quizEndCardBackBtn = document.getElementById('quiz-end-back-btn');
+const quizResetBtn = document.getElementById('quiz-restart-btn');
+
+const quizQuestionTitle = document.getElementById('quiz-question');
 const quizForm = document.getElementById('form-question');
 
 /* VALUES */
@@ -89,30 +93,51 @@ function changeQuizTitle(){
 nextQuestionBtn.addEventListener('click', nextQuestion);
 
 function nextQuestion(){
-    currentQuestion++;    
-    if (currentQuestion <= quizData.length - 1){
+  currentQuestion++;    
+  console.log(currentQuestion);
+    
+  if (currentQuestion <= quizData.length - 1){
         
-        changeQuizTitle();
-        showOptions();
-    }
+    changeQuizTitle();
+    showOptions();
+  }
+    
     else {
-        alert('nyside')
-    }
+    quizQuestionCard.style.display = "none";
+    quizEndCard.style.display = "block";
+  }
 };
 
 prevQuestionBtn.addEventListener('click', prevQuestion);
+quizEndCardBackBtn.addEventListener('click', prevQuestion);
+
 
 function prevQuestion(){
-    
-        if (currentQuestion > 0){
-            currentQuestion--;
-            changeQuizTitle();
-            showOptions();
-        }
-        else {
-            quizQuestionCard.style.display = "none";
-            quizIntroCard.style.display = "flex";
-        }
+  if (currentQuestion > 0 && currentQuestion < quizData.length){
+    currentQuestion--;
+    changeQuizTitle();
+    showOptions();
+    console.log(currentQuestion);
+  }
+
+  else if (currentQuestion == quizData.length) {
+    quizEndCard.style.display = "none";
+    quizQuestionCard.style.display = "block";
+    currentQuestion--;
+  }
+
+  else if (currentQuestion == 0) {
+    quizQuestionCard.style.display = "none";
+    quizIntroCard.style.display = "flex";            
+  }
+};
+
+quizResetBtn.addEventListener('click', restartQuiz);
+
+function restartQuiz (){
+    currentQuestion = 0;
+    quizEndCard.style.display = "none";
+    quizIntroCard.style.display = "flex";            
 };
 
 // Her opretter jeg er for-loop. Mit forloop opretter en variable kaldet i. Jeg skriver så
