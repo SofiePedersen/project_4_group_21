@@ -139,7 +139,7 @@ const quizData = [
   
   function showQuestion(){
       quizIntroCard.style.display = "none";
-      quizQuestionCard.style.display = "block";
+      quizQuestionCard.style.display = "flex";
   
       changeQuizTitle();
       showOptions();
@@ -163,7 +163,7 @@ const quizData = [
       
       else {
       quizQuestionCard.style.display = "none";
-      quizEndCard.style.display = "block";
+      quizEndCard.style.display = "flex";
     }
   };
   
@@ -181,7 +181,7 @@ const quizData = [
   
     else if (currentQuestion == quizData.length) {
       quizEndCard.style.display = "none";
-      quizQuestionCard.style.display = "block";
+      quizQuestionCard.style.display = "flex";
       currentQuestion--;
     }
   
