@@ -222,7 +222,6 @@ header {
     top: 0px;
     left: 0;
     display: none;
-    z-index: 1000;
 }
 
 .burger-menu-top {
@@ -785,7 +784,7 @@ header {
 /*  Buttons i kontaktformular styles herunder */
 
 /* Skjuler standard layout på radio- og checkbox-knapper */
-.checkbox-radio, .checkbox__grid-check {
+.checkbox-radio, .valgmulighed {
     display: none;
 }
 

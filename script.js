@@ -1,8 +1,234 @@
+// Mikkel's Javascript - START
 //HEADER//
+
+document.addEventListener("DOMContentLoaded", () => {
+    const burgerIcon = document.getElementById("burgermenu");
+    const showMenu = document.getElementById("showMenu");
+
+    burgerIcon.addEventListener("click", function () {
+        if (showMenu.style.display === "block") {
+            showMenu.style.display = "none";
+        } else {
+            showMenu.style.display = "block";
+        }
+    });
+
+    const dropdownItems = [
+        document.getElementById("om-dropdown-item"),
+        document.getElementById("frivillig-dropdown-item")
+    ];
+
+    dropdownItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+            item.classList.toggle("open");
+        });
+    });
+
+    const desktopDropdowns = document.querySelectorAll(".desktop-dropdown");
+
+    desktopDropdowns.forEach((item) => {
+        const trigger = item.querySelector("a");
+
+        trigger.addEventListener("click", () => {
+            // Luk andre åbne dropdowns først
+            desktopDropdowns.forEach((el) => {
+                if (el !== item) {
+                    el.classList.remove("open");
+                }
+            });
+
+            // Toggle den aktuelle dropdown
+            item.classList.toggle("open");
+        });
+    });
+
+    // Luk dropdowns ved klik udenfor
+    document.addEventListener("click", (e) => {
+        desktopDropdowns.forEach((item) => {
+            if (!item.contains(e.target)) {
+                item.classList.remove("open");
+            }
+        });
+    });
+});
+
+// Mikkel's Javascript - SLUT
+
+// Sofie's Javascript - START
 //SECTION 2 - QUIZ//
+
+/** Jeg laver et array af Data,
+ * som jeg vil bruge til at ændre indholdet på de forskellige quiz-sider */
+
+const quizData = [
+    {
+      question: 
+        "Hvor mange timer kan du være tilgængelig om måneden?",
+      
+      answers:[
+        "6 - 8 timer", 
+        "12 timer", 
+        "Jeg har brug for fleksible tider"
+      ]
+    },
+    {
+      question: 
+        "Hvad føler du beskriver dig bedst?",
+      
+      answers: [
+        "Jeg håber jeg er typen, mine venner kommer til, når de har brug for at snakke",
+        "Jeg vil gerne være en del af et fællesskab og nyder at møde nye mennesker",
+        "Jeg er kreativ, elsker at tage billede, lave videoer eller skrive tekster",
+        "Jeg drømmer om at gøre en forskel og brænder for at give viden videre til andre",
+        "Jeg føler jeg er god til at planlægge og organisere - jeg holder styr på tingene"
+      ]
+    },
+    {
+      question:
+        "Hvad vil være vigtigst for dig, hvis du skulle lave frivilligt arbejde?",
+      
+      answers: [
+        "At hjælpe unge og være der for dem",
+        "At sprede budskabet om mental sundhed og inspirere andre",
+        "At arbejde sammen med andre i et team og udvikle noget større",
+        "At være kreativ og lave engagerende indhold"
+      ]
+    },
+    {
+      question: 
+        "Hvordan vil du helst arbejde frivilligt?",
+      
+      answers: [
+        "Jeg vil gerne møde folk ansigt til ansigt og være der fysisk",
+        "Jeg vil gerne kunne hjælpe hjemmefra, når det passer ind i min dagligdag",
+        "Jeg vil gerne ud og tale med folk og lave oplæg",
+        "Jeg kan godt lide at tage ansvar og sørge for at processerne fungerer"
+      ]
+    },
+    {
+      question: 
+        "Hvilken sætning passer bedst til dig?",
+  
+      answers: [
+          "Jeg elsker at have dybe samtaler, hvor jeg virkelig kan lytte", 
+          "Jeg er god til at tale foran andre og formidle budskaber", 
+          "Jeg elsker at tage billeder, lave grafik eller redigere videoer",
+          "Jeg er god til at samle folk, og danne fællesskaber"
+      ]
+    }
+  ];
+  
+  /* ELEMENTS */
+  const quizIntroCard = document.getElementById('quiz-wrapper');
+  const quizQuestionCard = document.getElementById('quiz-question-card');
+  const quizEndCard = document.getElementById('quiz-end-card');
+  
+  const startQuizBtn = document.getElementById('startQuiz');
+  const nextQuestionBtn = document.getElementById('quiz-forward-btn');
+  const prevQuestionBtn = document.getElementById('quiz-back-btn')
+  const quizEndCardBackBtn = document.getElementById('quiz-end-back-btn');
+  const quizResetBtn = document.getElementById('quiz-restart-btn');
+  
+  const quizQuestionTitle = document.getElementById('quiz-question');
+  const quizForm = document.getElementById('form-question');
+  
+  /* VALUES */
+  let currentQuestion = 0; 
+  
+  startQuizBtn.addEventListener('click', showQuestion);
+  
+  function showQuestion(){
+      quizIntroCard.style.display = "none";
+      quizQuestionCard.style.display = "block";
+  
+      changeQuizTitle();
+      showOptions();
+  };
+  
+  function changeQuizTitle(){
+      quizQuestionTitle.innerHTML = quizData[currentQuestion].question;
+  };
+  
+  nextQuestionBtn.addEventListener('click', nextQuestion);
+  
+  function nextQuestion(){
+    currentQuestion++;    
+    console.log(currentQuestion);
+      
+    if (currentQuestion <= quizData.length - 1){
+          
+      changeQuizTitle();
+      showOptions();
+    }
+      
+      else {
+      quizQuestionCard.style.display = "none";
+      quizEndCard.style.display = "block";
+    }
+  };
+  
+  prevQuestionBtn.addEventListener('click', prevQuestion);
+  quizEndCardBackBtn.addEventListener('click', prevQuestion);
+  
+  
+  function prevQuestion(){
+    if (currentQuestion > 0 && currentQuestion < quizData.length){
+      currentQuestion--;
+      changeQuizTitle();
+      showOptions();
+      console.log(currentQuestion);
+    }
+  
+    else if (currentQuestion == quizData.length) {
+      quizEndCard.style.display = "none";
+      quizQuestionCard.style.display = "block";
+      currentQuestion--;
+    }
+  
+    else if (currentQuestion == 0) {
+      quizQuestionCard.style.display = "none";
+      quizIntroCard.style.display = "flex";            
+    }
+  };
+  
+  quizResetBtn.addEventListener('click', restartQuiz);
+  
+  function restartQuiz (){
+      currentQuestion = 0;
+      quizEndCard.style.display = "none";
+      quizIntroCard.style.display = "flex";            
+  };
+  
+  // Her opretter jeg er for-loop. Mit forloop opretter en variable kaldet i. Jeg skriver så
+  // Hvis I er mindre end længden på svarmuligheder i mit array quizData, så øger vi i's værdi
+  // Derefter beder jeg den i console.loggen at loop de enkelte svarmuligheder ud hver for sig.
+  
+  function showOptions(){
+      quizForm.innerHTML = "";
+  
+      for (let i = 0; i < quizData[currentQuestion].answers.length; i++) {
+      
+      const createQuizDivWrapper = document.createElement("div");
+      quizForm.appendChild(createQuizDivWrapper);
+  
+      const createQuizRadioInput = document.createElement("input");
+      createQuizRadioInput.type = "radio";
+      createQuizRadioInput.name = "questions";
+      createQuizDivWrapper.appendChild(createQuizRadioInput);
+  
+      const createQuizLabel = document.createElement("label");
+      createQuizLabel.for = "questions-" + i;
+      createQuizLabel.innerHTML = quizData[currentQuestion].answers[i];
+      createQuizLabel.class = ""
+      createQuizDivWrapper.appendChild(createQuizLabel);
+      };
+  };
+
+// Sofie's Javascript - SLUT
+
+// Alberte's Javascript - START
 //SECTION 4 - SLIDESHOW
 
-// Alberte's Javascript
 //Manuelt slideshow - swipe funktion
 let manualSlideIndex = 1;
 let startX = 0; 
@@ -102,6 +328,9 @@ function highlightThumbnail (n) {
     columns[n - 1].classList.add('active');
 }
 
+// Alberte's Javascript - SLUT
+
+// Sofie Ekstra Javascript
 // SECTION 5 - QNA//
 const qnaBtn1 = document.getElementById('qna-btn-1');
 const qnaBtn2 = document.getElementById('qna-btn-2');
@@ -181,4 +410,53 @@ function switchDisplay5 (){
     }
 }
 
+// Sofie Ekstra Javascript - Slut
+
+// Peter's Javascript - START
 //SECTION 7 - KONTAKTFORMULAR//
+
+// Definerer en variabel til at styre synligheden
+const toggleButton = document.getElementById("togglePopup");
+let popupVisible = false;
+// Definerer HTML-elementer
+const popupMenu = document.getElementById("popupMenu");
+const form = document.getElementById("kontaktForm");
+const emailInput = document.getElementById("email");
+const checkboxes = document.querySelectorAll(".valgmulighed");
+// Click-event for at vise/skjule popup
+toggleButton.addEventListener("click", function() {
+    popupVisible = !popupVisible;
+    if (popupVisible) {
+        popupMenu.style.display = "block";
+        toggleButton.textContent = "Vælg én eller flere positioner ▲";
+    } else {
+        popupMenu.style.display = "none";
+        toggleButton.textContent = "Vælg én eller flere positioner ▼";
+    }
+});
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Forhindrer formularen i at blive sendt
+    let email = emailInput.value;
+    if (!email.includes("@")) {
+        alert("Indtast venligst en gyldig e-mail");
+        return;
+    }
+    let selectedFormål = document.querySelector('input[name="formål"]:checked');
+    let formålValue = selectedFormål ? selectedFormål.value : "Ingen valg";
+    let valgmulighed = [];
+    checkboxes.forEach(function(checkbox) {
+        if (checkbox.checked) {
+            valgmulighed.push(checkbox.value);
+        }
+    });
+    // Opret userData objekt
+    let userData = {
+        email: email,
+        formål: formålValue, // Valgt formål
+        valgmulighed: valgmulighed // Checkbokse
+    };
+    console.log("Data på bruger er gemt:", userData);
+    alert("Tak for din interesse! Tjek din mail for mere information");
+});
+
+// Peter's Javascript - SLUT

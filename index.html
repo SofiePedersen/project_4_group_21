@@ -7,7 +7,6 @@
         <title>headspace</title>
         <link rel="stylesheet" href="main.css">
         <script src="script.js" defer></script>
-        <script src="header.js" defer></script> <!-- REMOVE-->
         <!--Font Awesome 4.7.0 by @davegandy-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -144,7 +143,63 @@
         </section>
 
         <!-- QUIZ -->
-        <section class="section-2"></section>
+        <section class="section-2">
+            <div id="quiz-wrapper" class="quiz-wrapper">
+                <div id="textfield" class="textfield">
+                    <h2 class="quiz-title">HVILKEN FRIVILLIG ER DU?</h2>
+                    <p id="quiz-text" class="quiz-text">
+                        Tag vores quiz, og svar på 5 spørgsmål
+                        der kan hjælpe dig på vej
+                    </p>
+                    <button id="startQuiz" class="cta-button">Start quiz</button>
+                </div>
+            </div>
+    
+            <div id="quiz-question-card" class="quiz-card">
+                <div class="quiz-card-wrapper">
+                    <h2 class="quiz-card-title">HVILKEN FRIVILLIG ER DU?</h2>
+                    <h3 id="quiz-question" class="quiz-card-question">Indlæser...</h3>                
+                    <form id="form-question" class="quiz-card-options"></form>
+    
+                    <div class="quiz-card-bottom-wrapper">
+                        <button class="cta-button" id="quiz-back-btn">Knap</button>
+                        <div class="quiz-bottom-dot-wrapper">
+                            <span class="quiz-bottom-dot"></span>
+                            <span class="quiz-bottom-dot"></span>
+                            <span class="quiz-bottom-dot"></span>
+                            <span class="quiz-bottom-dot"></span>
+                            <span class="quiz-bottom-dot"></span>
+                        </div>
+                        <button class="cta-button" id="quiz-forward-btn">Knap</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="quiz-end-card">
+                <div class="">
+                    <h2 class="quiz-card-title">DIG KUNNE VI GODT BRUGE!</h2>
+                    <p class="quiz-end-text">Du ville måske passe perfekt ind som frivillig på disse områder af headspace:</p>
+                    <ul class="quiz-end-ul">
+                        <li>Ungerådgiver</li>
+                        <li>Grupperådgiver</li>
+                        <li>Dialogpilot</li>
+                    </ul>
+                    <p class="quiz-end-text--2">
+                        Vil du være en del af headspace og gøre en forskel?
+                        <br >
+                        Skriv din mail herunder, så sender vi dig meget mere information.
+                    </p>
+                    <form class="quiz-end-form">
+                        <input class="quiz-end-form-email" type="email" placeholder="jegvilværefrivillig@headspace.dk" name="input-frivillige">
+                        <input class="quiz-end-form-submit" type="submit" value="Submit">
+                    </form>
+                    <div class="quiz-card-bottom-wrapper">
+                        <button class="cta-button" id="quiz-end-back-btn">Forrige</button>
+                        <button class="cta-button" id="quiz-restart-btn">Tag quiz igen</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- TEXT SECTION -->
         <section class="section-3">
@@ -494,7 +549,85 @@
         </section>
         
         <!-- KONTAKTFORMULAR -->
-        <section class="section-7"></section>
+        <section class="section-7">
+            <div class="kontakt-content-wrapper">
+                <h2>Kontakt os</h2>
+                <div class="kontakt__wrapper">
+                    <form id="kontaktForm">
+        
+                        <div class="email__container">
+                        <label class="email-label" for="email">din e-mail:</label>
+                        <input type="email" id="email" placeholder="jegvilværefrivillig@headspace.dk" required>
+                        </div>
+        
+                        <div class="radios">
+                        <h2>Hvilket formål kontakter du os med?</h2>
+                        <p>Vælg fra listen</p>
+                        </div>
+        
+                        <div class="checkbox-wrapper">
+                            <label class="checkbox-label"><input class="checkbox-radio" type="radio" name="formål" value="ansøgning">
+                                <span class="radio"></span>Jeg er klar til at ansøge</label>
+                            <label class="checkbox-label"><input class="checkbox-radio" type="radio" name="formål" value="hør mere">
+                                <span class="radio"></span>Jeg vil gerne høre mere om positionen</label>
+                            <label class="checkbox-label"><input class="checkbox-radio" type="radio" name="formål" value="anden årsag">
+                                <span class="radio"></span>Jeg kontakter jer af en anden årsag</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                
+                <button type="button" class="positioner-button" id="togglePopup">Vælg én eller flere positioner ▼</button>
+                
+            <div class="kontakt__popup" id="popupMenu">
+        
+                  <!-- checkbox indeholder en value, fordi den eller bare ville stå som "on" i consol.log, når der trykkes tilmeld -->
+                <div class="checkbox__grid">
+                    <label class="checkbox__grid-label">
+                      <input type="checkbox" class="valgmulighed" value="Ungerådgiver" checked>
+                      <span class="checkbox"></span>
+                      Ungerådgiver
+                    </label>
+                    <label class="checkbox__grid-label">
+                      <input type="checkbox" class="valgmulighed" value="Frivillig i chatten" checked>
+                      <span class="checkbox"></span>
+                      Frivillig i chatten
+                    </label>
+                    <label class="checkbox__grid-label">
+                      <input type="checkbox" class="valgmulighed" value="Grupperådgiver" checked>
+                      <span class="checkbox"></span>
+                      Grupperådgiver
+                    </label>
+                    <label class="checkbox__grid-label">
+                      <input type="checkbox" class="valgmulighed" value="Formidler" checked>
+                      <span class="checkbox"></span>
+                      Formidler
+                    </label>
+                    <label class="checkbox__grid-label">
+                      <input type="checkbox" class="valgmulighed" value="Peer frivillig" checked>
+                      <span class="checkbox"></span>
+                      Peer frivillig
+                    </label>
+                    <label class="checkbox__grid-label">
+                      <input type="checkbox" class="valgmulighed" value="Tiktok content creator" checked>
+                      <span class="checkbox"></span>
+                      Tiktok content creator
+                    </label>
+                    <label class="checkbox__grid-label">
+                      <input type="checkbox" class="valgmulighed" value="Dialogpilot" checked>
+                      <span class="checkbox"></span>
+                      Dialogpilot
+                    </label>
+                    <label class="checkbox__grid-label">
+                      <input type="checkbox" class="valgmulighed" value="Rådgivningsansvarlig" checked>
+                      <span class="checkbox"></span>
+                      Rådgivningsansvarlig
+                    </label>
+                    
+                </div>
+            </div>
+                <button type="submit" class="cta-button">SEND</button>
+        </section>
 
         <!-- SOME INFLUENCERS -->
         <section class="section-8">
