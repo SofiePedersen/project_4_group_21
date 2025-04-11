@@ -750,22 +750,32 @@ header {
 /* SECTION 7 - KONTAKTFORMULAR */
 .section-7 {
     width: 100%;
-    height: 800px;
-    background-color: red;
 }
 
 .kontakt-content-wrapper {
-    padding: 60px;
+    padding: 2rem;
+}
+
+.kontakt-content-wrapper h2 {
+    margin-bottom: 1rem;
+}
+
+.email-label {
+    font-family: "Agrandir-narrow";
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
 }
 
 .email__container input[type="email"] {
     background-color: rgba(200, 200, 200, 0.200);
-    width: 90%; 
+    width: 100%; 
     padding: 10px;
     margin: auto;
     border: 1px solid lightgray; 
     border-radius: 20px; 
     font-size: 16px;
+    margin-top: 0.5rem;
 }
 
 .email__container input[type="email"]::placeholder {
@@ -779,6 +789,11 @@ header {
 .radios {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.kontaktform-submit-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*styling af popup*/
@@ -816,11 +831,6 @@ header {
     font-size: 16px;
     line-height: 24px;
     color: #000;
-}
-
-.email-label {
-    padding-left: 0px;
-    font-style: normal;
 }
 
 /* Styling af radio-knapper */
@@ -887,9 +897,9 @@ input[type="checkbox"]:checked:hover + .checkbox {
 .positioner-button {
     background-color: rgba(200, 200, 200, 0.200);
     border: 1px solid lightgray; 
-    border-radius: 20px;
+    border-radius: 1000px;
     padding: 10px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
 
     font-family: "Agrandir-narrow";
