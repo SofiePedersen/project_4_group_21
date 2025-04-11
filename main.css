@@ -353,9 +353,11 @@ header {
 
 /*SECTION 2 - QUIZ */
 .section-2 {
-    width: 100%;
-    height: 100vh;
-    background-color: red;
+    width: 90%;
+    height: 650px;
+    margin: 20px;
+    border: 3px solid #81b428;
+
 }
 
 .quiz-wrapper {
@@ -367,8 +369,8 @@ header {
     height: 100vh;
     background-image: url('images/Hoptimist.png');
     background-repeat: no-repeat;
-    background-size: 45%;
-    background-position: 0% 94%;
+    background-size: 60%;
+    background-position: 0% 80%;
 }
 
 .quiz-title {
@@ -394,10 +396,12 @@ header {
     justify-content: center;
     align-items: flex-start;
     padding: 0.5rem;
-    padding-top: 2rem;
-    height: 100vh;
+    height: 100%;
     display: none;
-    background-color: coral;
+}
+
+.quiz-card .cta-button {
+    width: 90px;
 }
 
 .quiz-card-wrapper {
