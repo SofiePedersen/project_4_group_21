@@ -212,7 +212,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: px solid #d0d1d3;
 }
 
 .open-burger-menu {
@@ -773,10 +772,6 @@ header {
     margin-bottom: 20px;
 }
 
-.radios h2 {
-    font-size: 17;
-}
-
 /*styling af popup*/
 .kontakt__popup {
     background-color: white;
@@ -822,7 +817,7 @@ header {
 /* Styling af radio-knapper */
 .radio {
     position: absolute;
-    left: 20;
+    left: 20px;
     width: 20px;
     height: 20px;
     background-color: white;
@@ -854,7 +849,7 @@ input[type="radio"]:checked:hover + .radio {
 /* Styling af runde checkboxes til valgte positioner*/
 label .checkbox {
     position: absolute;
-    left: 20;
+    left: 20px;
     width: 20px;
     height: 20px;
     border: 2px solid black;
@@ -1331,10 +1326,6 @@ footer a:hover {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
       }
-
-      .radios h2 {
-        font-size: 28;
-    }
 
     /*SECTION 8 - SOME INFLUENCERS */
     .section-8 {
