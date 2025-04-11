@@ -66,7 +66,7 @@ p, a {
     height: 30px;
     border-radius: 40px;
     border: 1px solid #fff;
-    background-color: #699c10;
+    background-color: #46830c;
     font-family: "Agrandir-regular";
     font-size: 12px;
     text-align: center;
@@ -82,7 +82,7 @@ p, a {
     height: 40px;
     border-radius: 20px;
     border: 1px solid #fff;
-    background-color: #648D1C;
+    background-color: #46830c
     font-family: "Agrandir-regular";
     text-align: center;
     color: #fff;
@@ -91,11 +91,11 @@ p, a {
 }
 
 .cta-button:hover {
-    background-color: #648D1C;
+    background-color: #2e5709
 }
 
-.cta-button--long {
-    background-color: #648D1C;
+.cta-button--long:hover {
+    background-color: #2e5709
 }
 
 /* HEADER */
@@ -146,11 +146,7 @@ header {
 }
 
 .header-wrapper__navigation ul li a:hover {
-    color: #81b428;
-}
-
-.header-btn:hover {
-    background-color: #27ae60;
+    color: #46830c;
 }
 
 #headspace-logo {
@@ -288,7 +284,7 @@ header {
     background-image: url(images/headspace_bold.webp);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #81b428;
+    background-color: #46830c;
 
     display: flex;
     align-items: flex-end;
@@ -356,7 +352,7 @@ header {
     width: 90%;
     height: 650px;
     margin: 5%;
-    border: 3px solid #81b428;
+    border: 3px solid #46830c;
 }
 
 .quiz-wrapper {
@@ -374,14 +370,14 @@ header {
 
 .quiz-title {
     font-family: 'Agrandir-WideBlackItalic';
-    color: #81b428;
+    color: #46830c;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
 .quiz-card-title {
     font-family: 'Agrandir-WideBlackItalic';
-    color: #81b428;
+    color:#46830c;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -495,11 +491,15 @@ header {
     height: 35px;
     border-radius: 400px;
     border: none;
-    background-color: #81b428;
+    background-color: #46830c;
     font-family: "Agrandir-regular";
     font-size: 12px;
     border: 1px solid #fff;
     color: #fff;
+}
+
+.quiz-end-form-submit:hover {
+    background-color: #2e5709
 }
 
 .quiz-end-form-email {
@@ -630,7 +630,7 @@ header {
 }
 
 .dot.active {
-    background-color: #81b428;
+    background-color: #46830c;
 }
 
 .slide-box__row {
@@ -691,7 +691,7 @@ header {
 #qna-btn-3,
 #qna-btn-4,
 #qna-btn-5 {
-    background-color: #81b428;
+    background-color: #46830c;
     width: 50px;
     padding: 3px;
     margin-right: 1rem;
@@ -703,7 +703,7 @@ header {
 #qna-btn-3:hover,
 #qna-btn-4:hover,
 #qna-btn-5:hover {
-    background-color: #648D1C;
+    background-color: #2e5709
 }
 
 
@@ -847,7 +847,7 @@ header {
 
 /* Når radio-knappen er valgt (der kan kun vælges én) */
 input[type="radio"]:checked + .radio {
-    background-color: #81b428;
+    background-color: #46830c;
 }
 
 /* Flueben til valgt radio-knap */
@@ -884,7 +884,7 @@ input[type="checkbox"]:checked + .checkbox::after {
     content: '';
     width: 10px;
     height: 10px;
-    background-color: #81b428;
+    background-color: #46830c;
     border-radius: 50%;
 }
 
@@ -986,7 +986,7 @@ input[type="checkbox"]:checked:hover + .checkbox {
 
 /*FOOTER*/
 footer {
-    background-color: #81b428;
+    background-color: #46830c;
     width: 100%;
     padding: 2rem;
 }
@@ -1120,7 +1120,7 @@ footer a:hover {
         height: 40px;
         border-radius: 20px;
         border: 1px solid #fff;
-        background-color: #81b428;
+        background-color: #46830c;
         font-family: "Agrandir-regular";
         text-align: center;
         color: #fff;
@@ -1571,6 +1571,15 @@ footer a:hover {
     }
 
     /*SECTION 7 - KONTAKTFORMULAR */
+    .section-7 {
+        padding: 8rem;
+    }
+
+    .kontakt-content-wrapper {
+        padding: 0;
+    }
+
+
     .checkbox__grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
