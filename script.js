@@ -351,62 +351,62 @@ qnaBtn4.addEventListener('click', switchDisplay4);
 qnaBtn5.addEventListener('click', switchDisplay5);
 
 function switchDisplay1 (){
-    if (qnaParagraphText1.style.display === "none") {
-        qnaParagraphText1.style.display = "block";
-        qnaBtn1.src = "images/Minus.png";
+    if (qnaParagraphText1.style.display === "block") {
+        qnaParagraphText1.style.display = "none";
+        qnaBtn1.src = "images/Plus.png";
     }
 
     else {
-        qnaParagraphText1.style.display = "none";
-        qnaBtn1.src = "images/Plus.png";
+        qnaParagraphText1.style.display = "block";
+        qnaBtn1.src = "images/Minus.png";
     }
 }
 
 function switchDisplay2 (){
-    if (qnaParagraphText2.style.display === "none") {
-        qnaParagraphText2.style.display = "block";
-        qnaBtn2.src = "images/Minus.png";
+    if (qnaParagraphText2.style.display === "block") {
+        qnaParagraphText2.style.display = "none";
+        qnaBtn2.src = "images/Plus.png";
     }
 
     else {
-        qnaParagraphText2.style.display = "none";
-        qnaBtn2.src = "images/Plus.png";
+        qnaParagraphText2.style.display = "block";
+        qnaBtn2.src = "images/Minus.png";
     }
 }
 
 function switchDisplay3 (){
-    if (qnaParagraphText3.style.display === "none") {
-        qnaParagraphText3.style.display = "block";
-        qnaBtn3.src = "images/Minus.png";
+    if (qnaParagraphText3.style.display === "block") {
+        qnaParagraphText3.style.display = "none";
+        qnaBtn3.src = "images/Plus.png";
     }
 
     else {
-        qnaParagraphText3.style.display = "none";
-        qnaBtn3.src = "images/Plus.png";
+        qnaParagraphText3.style.display = "block";
+        qnaBtn3.src = "images/Minus.png";
     }
 }
 
 function switchDisplay4 (){
-    if (qnaParagraphText4.style.display === "none") {
-        qnaParagraphText4.style.display = "block";
-        qnaBtn4.src = "images/Minus.png";
+    if (qnaParagraphText4.style.display === "block") {
+        qnaParagraphText4.style.display = "none";
+        qnaBtn4.src = "images/Plus.png";
     }
 
     else {
-        qnaParagraphText4.style.display = "none";
-        qnaBtn4.src = "images/Plus.png";
+        qnaParagraphText4.style.display = "block";
+        qnaBtn4.src = "images/Minus.png";
     }
 }
 
 function switchDisplay5 (){
-    if (qnaParagraphText5.style.display === "none") {
-        qnaParagraphText5.style.display = "block";
-        qnaBtn5.src = "images/Minus.png";
+    if (qnaParagraphText5.style.display === "block") {
+        qnaParagraphText5.style.display = "none";
+        qnaBtn5.src = "images/Plus.png";
     }
 
     else {
-        qnaParagraphText5.style.display = "none";
-        qnaBtn5.src = "images/Plus.png";
+        qnaParagraphText5.style.display = "block";
+        qnaBtn5.src = "images/Minus.png";
     }
 }
 
