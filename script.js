@@ -413,17 +413,21 @@ function switchDisplay5 (){
 // Sofie Ekstra Javascript - Slut
 
 // Peter's Javascript - START
+
 //SECTION 7 - KONTAKTFORMULAR//
 
-// Definerer en variabel til at styre synligheden
+// Definerer en variabel til knappen, der styrer synligheden af popup
 const toggleButton = document.getElementById("togglePopup");
-let popupVisible = false;
-// Definerer HTML-elementer
+
+// Definerer variabler ud fra HTML-elementer
 const popupMenu = document.getElementById("popupMenu");
 const form = document.getElementById("kontaktForm");
 const emailInput = document.getElementById("email");
 const checkboxes = document.querySelectorAll(".valgmulighed");
-// Click-event for at vise/skjule popup
+
+let popupVisible = false; // boolean for at holde styr på om menuen er synlig eller ej
+
+// Click-event for at vise/skjule popup (vælg positioner)
 toggleButton.addEventListener("click", function() {
     popupVisible = !popupVisible;
     if (popupVisible) {
@@ -434,27 +438,35 @@ toggleButton.addEventListener("click", function() {
         toggleButton.textContent = "Vælg én eller flere positioner ▼";
     }
 });
+
+    // Event for at hente valgte informationer i form og bruge dem i userData
 form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Forhindrer formularen i at blive sendt
+    event.preventDefault(); // Forhindrer formularen i at blive sendt og siden i at reloade
+
     let email = emailInput.value;
     if (!email.includes("@")) {
         alert("Indtast venligst en gyldig e-mail");
         return;
     }
-    let selectedFormål = document.querySelector('input[name="formål"]:checked');
+
+    let selectedFormål = document.querySelector('input[name="formål"]:checked'); //der kan kun checkes én radio-knap
     let formålValue = selectedFormål ? selectedFormål.value : "Ingen valg";
-    let valgmulighed = [];
+    
+    let valgmulighed = []; // danner tomt array
+
     checkboxes.forEach(function(checkbox) {
         if (checkbox.checked) {
-            valgmulighed.push(checkbox.value);
+            valgmulighed.push(checkbox.value); //her hentes value på hver valgt checkbox og pushes i valgmulighed array
         }
     });
-    // Opret userData objekt
+
+    // Opretter userData objekt
     let userData = {
         email: email,
         formål: formålValue, // Valgt formål
-        valgmulighed: valgmulighed // Checkbokse
+        valgmulighed: valgmulighed // Valgte checkbokse  
     };
+
     console.log("Data på bruger er gemt:", userData);
     alert("Tak for din interesse! Tjek din mail for mere information");
 });
