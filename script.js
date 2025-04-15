@@ -470,5 +470,5 @@ form.addEventListener("submit", function(event) {
     console.log("Data på bruger er gemt:", userData);
     alert("Tak for din interesse! Tjek din mail for mere information");
 });
-
+// easter egg - god påske
 // Peter's Javascript - SLUT
